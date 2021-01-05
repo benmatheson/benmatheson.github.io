@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Junks on Ben Matheson</title>
+    <link>https://benmatheson.github.io/junk/</link>
+    <description>Recent content in Junks on Ben Matheson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>false</copyright>
+    <lastBuildDate>Sun, 10 Dec 2017 21:35:17 -0700</lastBuildDate>
+    
+	<atom:link href="https://benmatheson.github.io/junk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iditarod</title>
+      <link>https://benmatheson.github.io/junk/iditarod/</link>
+      <pubDate>Sun, 10 Dec 2017 21:35:17 -0700</pubDate>
+      
+      <guid>https://benmatheson.github.io/junk/iditarod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Longline</title>
+      <link>https://benmatheson.github.io/junk/longline/</link>
+      <pubDate>Wed, 10 May 2017 21:35:17 -0900</pubDate>
+      
+      <guid>https://benmatheson.github.io/junk/longline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alaska Flights</title>
+      <link>https://benmatheson.github.io/junk/flightsbackup/</link>
+      <pubDate>Wed, 10 May 2017 21:35:17 -0700</pubDate>
+      
+      <guid>https://benmatheson.github.io/junk/flightsbackup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>StoneCast</title>
+      <link>https://benmatheson.github.io/junk/stonecast/</link>
+      <pubDate>Wed, 10 May 2017 21:35:17 -0700</pubDate>
+      
+      <guid>https://benmatheson.github.io/junk/stonecast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wildfire Data Dashboard</title>
+      <link>https://benmatheson.github.io/junk/fire/</link>
+      <pubDate>Tue, 10 Jan 2017 21:35:17 -0900</pubDate>
+      
+      <guid>https://benmatheson.github.io/junk/fire/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

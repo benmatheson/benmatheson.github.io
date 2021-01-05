@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Ben Matheson</title>
+    <link>https://benmatheson.github.io/blog/</link>
+    <description>Recent content in Blogs on Ben Matheson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>false</copyright>
+    <lastBuildDate>Sun, 03 Jan 2021 22:05:17 -0800</lastBuildDate>
+    
+	<atom:link href="https://benmatheson.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alaska Governors&#39; Wild Ride on Oil Prices</title>
+      <link>https://benmatheson.github.io/blog/governor_oil/</link>
+      <pubDate>Sun, 03 Jan 2021 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/governor_oil/</guid>
+      <description>In 2018, prior to the outset of the new Governor Mike Dunleavy administration, I wanted to see how the oil markets had been for each of Alaska&amp;rsquo;s governors on a relative basis. We were ~four years into cheap oil. I indexed the price of oil (monthly data) to their first day in office and saw who took the elevator up and who rode it down. So I made this plot:</description>
+    </item>
+    
+    <item>
+      <title>Alaska 2020 Early Vote Tracker - Rmarkdown report</title>
+      <link>https://benmatheson.github.io/blog/early_vote/</link>
+      <pubDate>Fri, 01 Jan 2021 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/early_vote/</guid>
+      <description>**TL:DR, I made an rmarkdown site tracking Alaska&amp;rsquo;s early and mail vote as ballots arrived each day in October/November 2020.
+Alaskans voted by mail in record numbers during the 2020/pandemic general election. In mid-October after I mailed in my ballot, I started poking around the Alaska Division of Elections website to see if they had any reports on the incoming ballots. I found a daily updated PDF of mail votes, early votes, rejected ballots, and the ballots outstanding.</description>
+    </item>
+    
+    <item>
+      <title>AnchorageCovidTesting.org Website</title>
+      <link>https://benmatheson.github.io/blog/covid_testing/</link>
+      <pubDate>Wed, 30 Dec 2020 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/covid_testing/</guid>
+      <description>As part of a test and trace COVID-19 strategy, the Municipality of Anchorage set up a system of ~six COVID-19 testing sites in 2020 to give residents access to free and safe testing. In my work for the Anchorage Innovation Team, I worked with public health officials to help people get access to this testing.
+**TL:DR, we made a lightwight, mobile-first website to connect people to free COVID-19 testing. Check out the live site, which is active at least as of the end of December, 2020.</description>
+    </item>
+    
+    <item>
+      <title>2020 Iditarod Mushers Scratched at the Highest Rate in 40 Years</title>
+      <link>https://benmatheson.github.io/blog/iditarod_scratches/</link>
+      <pubDate>Sun, 19 Apr 2020 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/iditarod_scratches/</guid>
+      <description>The 2020 Iditarod Trail Sled Dog race will be remembered as the year the coronavirus upended the final days of the race and saw checkpoints lock down as the race finished in Nome. But it will also go down as of the most unforgiving for mushers: of the 57 mushers who began the race in Willow, 22 scratched and went home early.
+2020&amp;rsquo;s scratch rate of 38.5% ranks fourth highest in 48 years of racing.</description>
+    </item>
+    
+    <item>
+      <title>Alaska Wildfire Growth Animations</title>
+      <link>https://benmatheson.github.io/blog/fireanimation/</link>
+      <pubDate>Wed, 14 Aug 2019 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/fireanimation/</guid>
+      <description>The 2019 fire season has been destructive and long-lasting. More than 2.5 million acres have been burned across 707 fires as of September 9, 2019, according to the Alaska Interagency Coordination Center .
+Below are videos showing the mapped fire perimeters growth over the course of the summer (until the end of August).
+Statewide Fires
+  Swan Lake Fire
+The Swan Lake fire has burned since the start of summer and sent a lot of smoke across southcentral Alaska.</description>
+    </item>
+    
+    <item>
+      <title>For All Generations of Alaskans: How Sustainable is the Statutory Alaska Permanent Fund Dividend?</title>
+      <link>https://benmatheson.github.io/blog/pfdincome/</link>
+      <pubDate>Wed, 14 Aug 2019 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/pfdincome/</guid>
+      <description>Image: from the 1989 annual report.
+From 1983 to 2015, every woman, man, kid, and baby received an Alaska Permanent Fund Dividend check with an amount calculated by a 1982 law. It was rarely questioned publicly until the last five years because of ample petroleum revenues and several years of cushion thanks to the billions in the Constitutional Budget Reserve (now just fumes.)
+A former APFC website via waybackmachine.
+Thanks in part to a booming stock market that prescribes a big dividend (around $3,000 per citizen), a reckoning for the 1982 calculation has begun.</description>
+    </item>
+    
+    <item>
+      <title>Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map</title>
+      <link>https://benmatheson.github.io/blog/iditarodzoom/</link>
+      <pubDate>Fri, 29 Mar 2019 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/iditarodzoom/</guid>
+      <description>When March arrives in Alaska, there are two things on everyone&amp;rsquo;s mind:
+ The sun is back (and out until 10 p.m.). The Iditarod Trail Sled Dog Race is on.  To celebrate this year, I built a project that fuses a map of high resolution satellite imagery with an enormous amount of checkpoint data and a few 3D effects. Ultimately a proof-of-concept that got far out of hand.
+I have covered the race for Alaska public radio a couple times by travelling from checkpoint to checkpoint in a a small two-person airplane, a 50-year-old Piper Supercub.</description>
+    </item>
+    
+    <item>
+      <title>Beltway Billions Data Visualization</title>
+      <link>https://benmatheson.github.io/blog/contracts/</link>
+      <pubDate>Thu, 19 Jul 2018 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/contracts/</guid>
+      <description>The government spends billions of dollars per year on a dizzying array of gear and specialized services: office furniture, cloud computing, breakfast cereal, and advanced weapons systems are among destinations of taxpayer funds. I created a project to explore how a half-trillion dollars of federal funds go to Washington D.C. contractors and competitors in 50 states.
+This analysis, based on data published on Enigma Public, explores the geography of this contract spending among beltway firms and the thousands of regional and small-town competitors.</description>
+    </item>
+    
+    <item>
+      <title>ICE Contracts in Every State</title>
+      <link>https://benmatheson.github.io/blog/icecontracts/</link>
+      <pubDate>Thu, 19 Jul 2018 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/icecontracts/</guid>
+      <description>Like any government bureaucracy, the Immigration and Customs Enforcement’s Detention Compliance and Removals Office buys a a variety of supplies to run their detention facilities and maintain their offices. In light of public attention on the agency, I built a small tool to explore the millions of dollars in contracts.
+In addition to office essentials like copy paper and housekeeping services, the agency has contracts on the books for items like “alien meals,” “Cuffs/Belly Chains/ Shackles” (Galls, Inc), and a “database For Use By Fugops And Lear Teams To Assist In Apprehension Of Absconders And Criminal Illegal Aliens.</description>
+    </item>
+    
+    <item>
+      <title>Gas Hackathon</title>
+      <link>https://benmatheson.github.io/blog/gas/</link>
+      <pubDate>Sun, 17 Sep 2017 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/gas/</guid>
+      <description>I recently took part in Launch Alaska&amp;rsquo;s Renewable Energy Reverse Hack-a-thon. The &amp;ldquo;reverse&amp;rdquo; part comes into play in that there are a handful of signifincatly-baked ideas sketched out by industry and user experts presented to each team.
+I worked with Nigel Kibodeaux and Jazon Burnell to create a small web app that compares your real-time natural gas usage with your neighbors.
+Your utility isn&amp;rsquo;t giving you the data, however. They only check once a month to see how much to bill you.</description>
+    </item>
+    
+    <item>
+      <title>Custom Alaska Fire Dashboard</title>
+      <link>https://benmatheson.github.io/blog/fire/</link>
+      <pubDate>Wed, 19 Jul 2017 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/fire/</guid>
+      <description>Fire season in Alaska moves fast. When temperatures reach the 70s during the endless summer days, the spruce trees in the boreal forest are ready to light up when thunderstorms strike. I&amp;rsquo;ve always kept up with fires for work at KYUK in Bethel and out of sheer interest.
+The Alaska Fire Service does a super job of publishing data in a timely manner for the managers who are dispatching millions of dollars of aircraft across the state and the broader group of homeowners, ecologists, land owners and other.</description>
+    </item>
+    
+    <item>
+      <title>Going Static</title>
+      <link>https://benmatheson.github.io/blog/static/</link>
+      <pubDate>Wed, 19 Jul 2017 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/static/</guid>
+      <description>I&amp;rsquo;ve now launched the fourth version of my &amp;ldquo;personal website&amp;rdquo; in the decade or so it&amp;rsquo;s been up. I used Hugo for a basic portfolio and blog site. A fast look at the history of this site follows the broad trajectory of web design in recent years.
+Ugly tables &amp;gt; wordpress complexity &amp;gt; responsive wordpress, less complexity &amp;gt; HTML5 responsive static site.
+Version 1 2007-2009 I built a basic, table-based website for a class.</description>
+    </item>
+    
+    <item>
+      <title>Permanent Fund Dividend Simulation</title>
+      <link>https://benmatheson.github.io/blog/pfd_invest_simulation/</link>
+      <pubDate>Wed, 19 Jul 2017 22:05:17 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/pfd_invest_simulation/</guid>
+      <description>Every October, the State of Alaska cuts a check to each man, woman, and child living in the state. The Permanent Fund Divided is: (depending who you ask)
+ our share of the oil wealth on state lands an attempt to turn non-renewable resource (oil) to a renewable one (diversified global investments) universal basic income (Mark Zuckerberg) a check on the Alaska Legislature&amp;rsquo;s desire to spend and grow budgets. Payment for living in the state (The Simpson&amp;rsquo;s Movie)  The checks are a portion of a five-year moving average of fund earnings.</description>
+    </item>
+    
+    <item>
+      <title>Iditarod Trail Coverage</title>
+      <link>https://benmatheson.github.io/blog/iditarod/</link>
+      <pubDate>Mon, 10 Jul 2017 15:30:19 -0600</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/iditarod/</guid>
+      <description>I covered the 2017 Iditarod Trail Sled Dog Race for Alaska Public Media and KNOM Radio. I&amp;rsquo;ve covered the finish of the race before when I began at KNOM in 2010 and reported from the trail of the Kuskokwim 300 when I worked in Bethel. The Iditarod is a different beast: the race never slows down and you have to have a certain hustle to get your story in order from remote checkpoints.</description>
+    </item>
+    
+    <item>
+      <title>Longline</title>
+      <link>https://benmatheson.github.io/blog/longline/</link>
+      <pubDate>Mon, 10 Jul 2017 15:25:25 -0600</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/longline/</guid>
+      <description>Working with Alaskan journalists Zach Hughes, Emily Kwong, and Vik Patel, I built the website for the Longline podcast.
+The audio and web project explores the characters and stories found at the edge of the continent. The Deep Signals episode parses the human dimensions of the military&amp;rsquo;s vast Cold War-era listening stations scattered across the coasts of Arctic Alaska and throughout the interior of the state.
+I went for a clean, &amp;ldquo;longform&amp;rdquo; style throughout the site.</description>
+    </item>
+    
+    <item>
+      <title>StoneCast</title>
+      <link>https://benmatheson.github.io/blog/stonecast/</link>
+      <pubDate>Tue, 04 Jul 2017 19:31:30 -0800</pubDate>
+      
+      <guid>https://benmatheson.github.io/blog/stonecast/</guid>
+      <description>I created the visual identity for StoneCast, a St Paul, Minnesota-based curling podcast.
+Jordan Wiklund and Kristofer Lysne cover the characters and rich culture centered at the St. Paul curling club. They also broadcast live from major curling events.
+Check them out at http://stonecast.rocks/ or on the Apple Podcasts app.</description>
+    </item>
+    
+  </channel>
+</rss>
