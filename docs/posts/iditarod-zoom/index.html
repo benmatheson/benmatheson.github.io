@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html
+  lang="en-US"
+  
+><head>
+  <meta charset="utf-8" />
+  
+    <meta http-equiv="content-language" content="en-US" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map &middot; Ben Matheson</title>
+    <meta name="title" content="Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map &middot; Ben Matheson" />
+  
+  <meta name="description" content="" />
+  
+  
+  
+  <link rel="canonical" href="/posts/iditarod-zoom/" />
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/schemes/Ocean.min.ff17c50528c7a4a8a8bb8ec41272d63eb936ecefb9ccfa6db45cd1f5cd8b1becf8606745f751ee0d322ac80c9cb96e58aa699b38aa44cff9d2a8b3ff4f05a7b5.css"
+    integrity="sha512-/xfFBSjHpKiou47EEnLWPrk27O&#43;5zPpttFzR9c2LG&#43;z4YGdF91HuDTIqyAycuW5YqmmbOKpEz/nSqLP/TwWntQ=="
+  />
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/compiled/main.min.4076b9cf114dd23cca017f3365e2205a4c9a4b2c0ef4193ccd08883f76e554aa40f674a8f6e77a1b2895be0975ba8e019b0c59996c2eea32e4970ca4d5221653.css"
+    integrity="sha512-QHa5zxFN0jzKAX8zZeIgWkyaSywO9Bk8zQiIP3blVKpA9nSo9ud6GyiVvgl1uo4BmwxZmWwu6jLklwyk1SIWUw=="
+  />
+  
+  
+    
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/css/custom.min.d6476224aa826a677cb9ab5a2f7b0f9f0adc403cbc11016b0b066253eb756dfadcf871a2147f54f11bf2024f627d85daf4e588f2dadf2c4c5f596e395cc5ada6.css"
+      integrity="sha512-1kdiJKqCamd8uataL3sPnwrcQDy8EQFrCwZiU&#43;t1bfrc&#43;HGiFH9U8RvyAk9ifYXa9OWI8trfLExfWW45XMWtpg=="
+    />
+  
+  
+    <script>
+      localStorage.removeItem("preferredAppearance");
+    </script>
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map" />
+<meta property="og:description" content="When March arrives in Alaska, there are two things on everyone&rsquo;s mind:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/iditarod-zoom/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-03-29T22:05:17-08:00" />
+<meta property="article:modified_time" content="2019-03-29T22:05:17-08:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map"/>
+<meta name="twitter:description" content="When March arrives in Alaska, there are two things on everyone&rsquo;s mind:"/>
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "",
+    "name": "Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map",
+    "headline": "Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map",
+    "description": "When March arrives in Alaska, there are two things on everyone\u0026rsquo;s mind:",
+    "inLanguage": "en-US",
+    "author" : {
+      "@type": "Person",
+      "name": "Ben Matheson"
+    },
+    "creator" : {
+      "@type": "Person",
+      "name": "Ben Matheson"
+    },
+    "copyrightHolder": "Ben Matheson",
+    "copyrightYear": "2019",
+    "dateCreated": "2019-03-29T22:05:17-08:00",
+    "datePublished": "2019-03-29T22:05:17-08:00",
+    "dateModified": "2019-03-29T22:05:17-08:00",
+    "url" : "\/posts\/iditarod-zoom\/",
+    "wordCount": "1165",
+    "keywords": []
+  }
+  </script>
+
+
+  
+  
+  
+  <meta name="author" content="Ben Matheson" />
+  
+    
+      <link href="https://twitter.com/benmatheson" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
+  ><header
+  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-800 dark:text-neutral"
+>
+  
+  <div>
+    
+      <a
+        class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+        rel="me"
+        href="/"
+        >Ben Matheson</a
+      >
+  </div>
+  
+  
+    <nav>
+      <ul class="flex flex-col list-none sm:flex-row">
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/posts/"
+              title=""
+              >Writing</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/projects/"
+              title="Projects"
+              >Projects</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/contact/"
+              title="Contact"
+              >Contact</a
+            >
+          </li>
+        
+      </ul>
+    </nav>
+  
+</header>
+<main class="flex-grow">
+  <article class="max-w-prose">
+    <header>
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-800 dark:text-neutral">
+        Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map
+      </h1>
+      <div class="mt-8 mb-12 text-base text-neutral-400 dark:text-neutral-500">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row items-center">
+    
+    
+
+    
+    
+  </div>
+
+
+      </div>
+    </header>
+    <section class="prose dark:prose-light">
+      <p>When March arrives in Alaska, there are two things on everyone&rsquo;s mind:</p>
+<ol>
+<li>The sun is back (and out until 10 p.m.).</li>
+<li>The Iditarod Trail Sled Dog Race is on.</li>
+</ol>
+<p>To celebrate this year, I built [a project] (<a href="https://benmatheson.github.io/irodzoom/">https://benmatheson.github.io/irodzoom/</a>) that fuses a map of high resolution satellite imagery with an enormous amount of checkpoint data and a few 3D effects. Ultimately a proof-of-concept that got far out of hand.</p>
+<p><img src="images/ezgif-3-c0a08646e1e0.gif" alt="gif 2"></p>
+<p>I have covered the race for Alaska <a href="https://itunes.apple.com/us/podcast/iditapod/id1204512892?mt=2">public radio</a> a couple times by travelling from checkpoint to checkpoint in a a small two-person airplane, a 50-year-old <a href="https://en.wikipedia.org/wiki/Piper_PA-18_Super_Cub">Piper Supercub.</a></p>
+<p><img src="images/IMG_1500.JPG" alt="gif 1"></p>
+<p>It flies low and slow enough that you see every wet creek crossing, moose hunkered down in willows, and a few of the millions of lakes in the state.</p>
+<p><img src="images/IMG_1262.JPG" alt="gif 1"></p>
+<p>Inspired some by the Washington Post&rsquo;s superb <a href="https://www.washingtonpost.com/graphics/2018/national/us-mexico-border-flyover/?utm_term=.915bd937e601">Borderline</a> project, I wanted to replicate a small portion of the flight experience. It&rsquo;s hard to get anywhere on the trail, after it leaves the start, it&rsquo;s really only access by small airplane and snowmobile.</p>
+<p><img src="images/IMG_1769.JPG" alt="gif 1"></p>
+<p>Mushing is a tough spectatory sport: due to the inacessiblility of the terrain, race fans spend money and many hours to obsessively follow the <a href="https://iditarod.com/gps/">GPS tracker</a> (myself included) during the race, the terrain and sharp beauty of Alaska’s snow-covered rivers, mountains, and frozen ocean doesn’t come through:</p>
+<p><img src="images/screenshots/gps.png" alt="gif 1"></p>
+<p>I set out to get some of the gorgeous imagery and give a small taste of the beauty of the trail.</p>
+<p><img src="images/ezgif-2-3198e50deb64.gif" alt="gif 1"></p>
+<p>The trail is as long as a trip from New York to Florida. The Alaska landscape transforms from steep mountains to the vast Yukon River to the barren Bering Sea coastline over the course of the race.</p>
+<p><img src="images/ezgif-2-5995c6c4584c.gif" alt="gif 1"></p>
+<p><strong>The basics:</strong></p>
+<p>The Iditarod is sled dog race from Willow (near Anchorage) to Nome that takes 8-11 days or so. But it’s way more. I think of it as a 4-D game of chess across 1,000 miles of wilderness trails in which the cast of oddball mushers push themselves to the limit and go on an adventure with their 14 extremely smart and athletic dogs.</p>
+<p><img src="images/IMG_1607.JPG" alt="gif 1"></p>
+<p>It’s a celebration of history, rural communities, athleticism and outdoor travel. It makes for [good radio] (<a href="http://www.knom.org/wp/blog/author/bmatheson/">http://www.knom.org/wp/blog/author/bmatheson/</a>) (in my opinion) and gives me a space to play with rich spatial and performance data to hit that sweet spot in the venn diagram of  “fun things I really like”, and “doing interesting data and web work.”</p>
+<p><img src="images/IMG_1094.JPG" alt="gif 1"></p>
+<p><strong>The satellite images</strong></p>
+<p>There is no prebaked web service of good winter imagery that I know of, so I made one. I downloaded dozens of Sentinel-2 images of the trail through the  <a href="https://apps.sentinel-hub.com/eo-browser/?lat=61.1732&amp;lng=-149.9389&amp;zoom=11">Sentinal Hub EO Browser</a>. To find cloud-free scenes, I found a period in 2017 that had a few nice days of clear skies and snagged the best scenes I could find. Most satellite depictions of Alaska involve summer imagery and I was very glad to show the winter scenes that the dog mushers experience (although rarely in such fine weather).</p>
+<p><img src="images/screenshots/downloadImages.png" alt="gif 1"></p>
+<p>I stitched them together with gdal, creating a 650mb+ file. There surely is a better way, but this is how it came together for me.</p>
+<pre tabindex="0"><code> gdal_merge.py --config CHECK_DISK_FREE_SPACE NO -co COMPRESS=DEFLATE -ul_lr 
+ -18664504.8 9651906.9 -16615721.2 8650903.1 -o outSupplementTuesday.tiff 00001.tiff 
+ 00002.tiff 0001.tiff 0002.tiff 0003.tiff 0004.tiff 0005.tiff 0006.tiff 0007.tiff   
+0008.tiff 0009.tiff 00010.tiff 00011.tiff 00012.tiff 001.tiff 002.tiff 003.tiff 
+   004.tiff 1.tiff 2.tiff 3.tiff 4.tiff 5.tiff 6.tiff 7.tiff 8.tiff 9.tiff 10.tiff 
+ 11.tiff 12.tiff 13.tiff 14.tiff 15.tiff 16.tiff 17.tiff 18.tiff 19.tiff 20.tiff 21.tiff 22.tiff
+</code></pre><p>I uploaded this massive raster to <a href="https://www.mapbox.com/mapbox-studio/">Mapbox Studio</a>.</p>
+<p><img src="images/screenshots/mb.png" alt="gif 1"></p>
+<p>Within MapBox Studio, I added a&hellip;somewhat accurate&hellip;line feature of the trail route (it changes a bit year-to-year) and the ~25 small village checkpoints. Mapbox then does the hard work of slicing the images and features into several tiles that load only when users need to see them. I then used Mapbox-gl’s <a href="https://docs.mapbox.com/mapbox-gl-js/example/flyto-options/">flyTo</a> feature liberally in combination with a pitch setting to give a more 3D view of the horizon instead of looking straight down at the ground.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">regFly</span>() {
+
+
+    <span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">flyTo</span>({<span style="color:#a6e22e">center</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">newSumData</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">lon</span>,<span style="color:#a6e22e">newSumData</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">lat</span>],        
+        <span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> .<span style="color:#ae81ff">1</span>, 
+    <span style="color:#a6e22e">curve</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>, 
+    <span style="color:#a6e22e">pitch</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">80</span>,
+    <span style="color:#a6e22e">bearing</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">270</span>,
+    <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span><span style="color:#ae81ff">9.7</span>,
+    <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10000</span>})
+}
+
+</code></pre></div><p>I hooked up a couple buttons to manage the flying back and forth between checkpoints. But I wanted to have a few dashboard indicators of the race update as viewers progessed between checkpoints, so I went to snag the thousands of datapoints to illustrate it.</p>
+<p><strong>The Race Data</strong></p>
+<p>I scraped the Iditarod website’s many checkpoint <a href="https://iditarod.com/race/2018/checkpoints/9-Nikolai/">html tables</a> using <a href="https://rvest.tidyverse.org/">rvest</a> to build a database of each check-in and check-out time of all 67 mushers at all 25 checkpoints, along with the their run times, rest times, dog drops.</p>
+<p><img src="images/leader.png" alt="gif 1"></p>
+<p>I was able to reuse..a bit..of code from my <a href="https://benmatheson.github.io/iditarod/">Iditarod visualization project</a> last year, but this was a somewhat lengthy process unto itself after parsing the different flavors of times/dates and reshaping the data a few ways. Here&rsquo;s one of the main scraping functions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">readCheck <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(url) {
+  
+checkPage <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_html</span>(url, handle <span style="color:#f92672">=</span> curl<span style="color:#f92672">::</span><span style="color:#a6e22e">new_handle</span>(<span style="color:#e6db74">&#34;useragent&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mozilla/5.0&#34;</span>)) 
+checkData <span style="color:#f92672">&lt;-</span> checkPage <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">html_nodes</span>(<span style="color:#e6db74">&#39;table&#39;</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">html_table</span>(fill<span style="color:#f92672">=</span>T)
+checkName <span style="color:#f92672">&lt;-</span> checkPage <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">html_nodes</span>(<span style="color:#e6db74">&#39;h1&#39;</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">html_text</span>()
+checkName <span style="color:#f92672">&lt;-</span> checkName[[3]]
+checkDf <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.data.frame</span>(checkData)
+<span style="color:#a6e22e">ifelse</span>(checkName <span style="color:#f92672">%in%</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Ophir&#34;</span>, <span style="color:#e6db74">&#34;Kaltag&#34;</span>), checkDf <span style="color:#f92672">&lt;-</span> checkDf[2<span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(checkDf) ,<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">12</span>], checkDf <span style="color:#f92672">&lt;-</span> checkDf[2<span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(checkDf) ,<span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">12</span>] )
+<span style="color:#a6e22e">names</span>(checkDf) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;musher&#34;</span>, <span style="color:#e6db74">&#34;bib&#34;</span>,<span style="color:#e6db74">&#34;intime&#34;</span>,<span style="color:#e6db74">&#34;indogs&#34;</span>, <span style="color:#e6db74">&#34;outtime&#34;</span>, <span style="color:#e6db74">&#34;outdogs&#34;</span>, <span style="color:#e6db74">&#34;rest&#34;</span>, <span style="color:#e6db74">&#34;enroute&#34;</span>,<span style="color:#e6db74">&#34;prev&#34;</span>, <span style="color:#e6db74">&#34;speed&#34;</span>)
+checkDf<span style="color:#f92672">$</span>checkName <span style="color:#f92672">&lt;-</span> checkName
+<span style="color:#a6e22e">write_csv</span>(checkDf, <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;outCsv/&#34;</span>,<span style="color:#a6e22e">Sys.time</span>(),<span style="color:#e6db74">&#34;1.csv&#34;</span>))
+checkDf}
+
+
+
+
+<span style="color:#75715e">###the full thing!!!</span>
+full2018 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lapply</span>(urls, readCheck) <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">bind_rows</span>()
+
+
+</code></pre></div><p>(The major missing piece is the actual GPS data. Mushers frequently rest their teams by camping outside checkpoints, so this is only a partial representation of the strategy beneath the surface).</p>
+<p>I used R and the dplyr set of tools to do things like clean up the messy dates using the wonderful lubridate set of tools, and generate a set of summary stats for each checkpoint. These went into a few of the sidebar elements.</p>
+<p><img src="images/ezgif-2-6ce03a987cd1.gif" alt="gif 1"></p>
+<p><strong>The D3 + Charts</strong></p>
+<p>I built a small dashboard looking at things like dropped dogs, run speeds, strategic breaks, and correlation between checkpoint place and final place. My vision was to have the charts update smoothly as the viewer flies between checkpoints and I need to push my D3 skills a bit to join and rejoin the data ~25 times throughout the fly-through experience.</p>
+<p><img src="images/ezgif-3-c0a08646e1e0.gif" alt="gif 2"></p>
+<p>It’s inspired by augmented reality (and I did experiment with a more futuristic transparent design), but it was never quite there.</p>
+<p><img src="images/screenshots/ezgif-2-c373b7202240.gif" alt="gif 2"></p>
+<p>It was D3’s update feature that makes the transitions fun. Each circle is tied to an individual racer by using D3’s key function. When the user presses the next key, it runs a function that updates the data that is joined to each SVG (or html) element and transitions it over a portion of a second. There are 25 or so data joins in this way of doing things. I ended up on the <a href="https://bost.ocks.org/mike/join/">same 2012 article</a> by Mike Bostock that I&rsquo;ve surely read 100 times by now.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
+<span style="color:#75715e">//UPDATED SCATTER 
+</span><span style="color:#75715e"></span>
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">scat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">d3</span>.<span style="color:#a6e22e">select</span>(<span style="color:#e6db74">&#39;#right2&#39;</span>).<span style="color:#a6e22e">selectAll</span>(<span style="color:#e6db74">&#39;g&#39;</span>)
+
+   <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">c1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">scatterSvgG</span>.<span style="color:#a6e22e">selectAll</span>(<span style="color:#e6db74">&#39;circle&#39;</span>).<span style="color:#a6e22e">data</span>(<span style="color:#a6e22e">newCpData</span>, <span style="color:#a6e22e">d</span>=&gt; <span style="color:#a6e22e">d</span>.<span style="color:#a6e22e">bib</span>)
+   <span style="color:#a6e22e">c1</span>.<span style="color:#a6e22e">exit</span>().<span style="color:#a6e22e">remove</span>()
+
+
+   <span style="color:#a6e22e">c1</span>.<span style="color:#a6e22e">transition</span>()
+    .<span style="color:#a6e22e">duration</span>(<span style="color:#ae81ff">2000</span>)
+    .<span style="color:#a6e22e">ease</span>(<span style="color:#a6e22e">d3</span>.<span style="color:#a6e22e">easeExp</span>) 
+   .<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;cx&#34;</span>, <span style="color:#a6e22e">d</span>=&gt;<span style="color:#a6e22e">scatterXScale</span>(<span style="color:#a6e22e">d</span>.<span style="color:#a6e22e">cpOrder</span>))
+   .<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;cy&#34;</span>, <span style="color:#a6e22e">d</span>=&gt;<span style="color:#a6e22e">scatterYScale</span>(<span style="color:#a6e22e">d</span>.<span style="color:#a6e22e">finalOrder</span>))
+</code></pre></div><p>It&rsquo;s most certainly designed for desktop (might be a painful experience on any mobile device), but please enjoy [the final product!] (<a href="https://benmatheson.github.io/irodzoom/)">https://benmatheson.github.io/irodzoom/)</a>. And stay tuned for a different visualization of the 2019 data.</p>
+
+    </section>
+    <footer class="pt-8">
+      
+
+      
+
+      
+  
+    <div class="pt-8 article-pagination">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex" href="/posts/pfdincome/">
+              <span class="mr-3 article-pagination-direction">&larr;</span>
+              <span class="flex flex-col">
+                <span class="article-pagination-title mt-[0.1rem] leading-6"
+                  >For All Generations of Alaskans: How Sustainable is the Statutory Alaska Permanent Fund Dividend?</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-400 dark:text-neutral-500">
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right" href="/posts/federal_contracts/">
+              <span class="flex flex-col">
+                <span class="article-pagination-title mt-[0.1rem] leading-6"
+                  >Beltway Billions Data Visualization</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-400 dark:text-neutral-500">
+                  
+                </span>
+              </span>
+              <span class="ml-3 article-pagination-direction">&rarr;</span>
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    </footer>
+    
+  </article>
+</main><footer class="py-10">
+  
+  
+  <div class="flex justify-between">
+    <div>
+      
+      <p class="text-sm text-neutral-400 dark:text-neutral-500">
+          &copy;
+          2022
+          Ben Matheson
+      </p>
+      
+      
+    </div>
+    
+    
+  </div>
+  
+  
+</footer>
+</body>
+</html>

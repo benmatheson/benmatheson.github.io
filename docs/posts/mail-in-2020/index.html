@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html
+  lang="en-US"
+  
+><head>
+  <meta charset="utf-8" />
+  
+    <meta http-equiv="content-language" content="en-US" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Alaska 2020 Early Vote Tracker - Rmarkdown report &middot; Ben Matheson</title>
+    <meta name="title" content="Alaska 2020 Early Vote Tracker - Rmarkdown report &middot; Ben Matheson" />
+  
+  <meta name="description" content="" />
+  
+  
+  
+  <link rel="canonical" href="/posts/mail-in-2020/" />
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/schemes/Ocean.min.ff17c50528c7a4a8a8bb8ec41272d63eb936ecefb9ccfa6db45cd1f5cd8b1becf8606745f751ee0d322ac80c9cb96e58aa699b38aa44cff9d2a8b3ff4f05a7b5.css"
+    integrity="sha512-/xfFBSjHpKiou47EEnLWPrk27O&#43;5zPpttFzR9c2LG&#43;z4YGdF91HuDTIqyAycuW5YqmmbOKpEz/nSqLP/TwWntQ=="
+  />
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/compiled/main.min.4076b9cf114dd23cca017f3365e2205a4c9a4b2c0ef4193ccd08883f76e554aa40f674a8f6e77a1b2895be0975ba8e019b0c59996c2eea32e4970ca4d5221653.css"
+    integrity="sha512-QHa5zxFN0jzKAX8zZeIgWkyaSywO9Bk8zQiIP3blVKpA9nSo9ud6GyiVvgl1uo4BmwxZmWwu6jLklwyk1SIWUw=="
+  />
+  
+  
+    
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/css/custom.min.d6476224aa826a677cb9ab5a2f7b0f9f0adc403cbc11016b0b066253eb756dfadcf871a2147f54f11bf2024f627d85daf4e588f2dadf2c4c5f596e395cc5ada6.css"
+      integrity="sha512-1kdiJKqCamd8uataL3sPnwrcQDy8EQFrCwZiU&#43;t1bfrc&#43;HGiFH9U8RvyAk9ifYXa9OWI8trfLExfWW45XMWtpg=="
+    />
+  
+  
+    <script>
+      localStorage.removeItem("preferredAppearance");
+    </script>
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Alaska 2020 Early Vote Tracker - Rmarkdown report" />
+<meta property="og:description" content="**TL:DR, I made an rmarkdown site tracking Alaska&rsquo;s early and mail vote as ballots arrived each day in October/November 2020." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/mail-in-2020/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-01-01T22:05:17-08:00" />
+<meta property="article:modified_time" content="2021-01-01T22:05:17-08:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Alaska 2020 Early Vote Tracker - Rmarkdown report"/>
+<meta name="twitter:description" content="**TL:DR, I made an rmarkdown site tracking Alaska&rsquo;s early and mail vote as ballots arrived each day in October/November 2020."/>
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "",
+    "name": "Alaska 2020 Early Vote Tracker - Rmarkdown report",
+    "headline": "Alaska 2020 Early Vote Tracker - Rmarkdown report",
+    "description": "**TL:DR, I made an rmarkdown site tracking Alaska\u0026rsquo;s early and mail vote as ballots arrived each day in October\/November 2020.",
+    "inLanguage": "en-US",
+    "author" : {
+      "@type": "Person",
+      "name": "Ben Matheson"
+    },
+    "creator" : {
+      "@type": "Person",
+      "name": "Ben Matheson"
+    },
+    "copyrightHolder": "Ben Matheson",
+    "copyrightYear": "2021",
+    "dateCreated": "2021-01-01T22:05:17-08:00",
+    "datePublished": "2021-01-01T22:05:17-08:00",
+    "dateModified": "2021-01-01T22:05:17-08:00",
+    "url" : "\/posts\/mail-in-2020\/",
+    "wordCount": "1079",
+    "keywords": []
+  }
+  </script>
+
+
+  
+  
+  
+  <meta name="author" content="Ben Matheson" />
+  
+    
+      <link href="https://twitter.com/benmatheson" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
+  ><header
+  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-800 dark:text-neutral"
+>
+  
+  <div>
+    
+      <a
+        class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+        rel="me"
+        href="/"
+        >Ben Matheson</a
+      >
+  </div>
+  
+  
+    <nav>
+      <ul class="flex flex-col list-none sm:flex-row">
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/posts/"
+              title=""
+              >Writing</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/projects/"
+              title="Projects"
+              >Projects</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/contact/"
+              title="Contact"
+              >Contact</a
+            >
+          </li>
+        
+      </ul>
+    </nav>
+  
+</header>
+<main class="flex-grow">
+  <article class="max-w-prose">
+    <header>
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-800 dark:text-neutral">
+        Alaska 2020 Early Vote Tracker - Rmarkdown report
+      </h1>
+      <div class="mt-8 mb-12 text-base text-neutral-400 dark:text-neutral-500">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row items-center">
+    
+    
+
+    
+    
+  </div>
+
+
+      </div>
+    </header>
+    <section class="prose dark:prose-light">
+      <p>**<em>TL:DR, I made an rmarkdown site <a href="https://benmatheson.github.io/alaska_2020_early_absentee_vote/early_vote_md.html">tracking Alaska&rsquo;s early and mail vote</a> as ballots arrived each day in October/November 2020.</em></p>
+<p>Alaskans voted by mail in record numbers during the 2020/pandemic general election. In mid-October after I mailed in my ballot, I started poking around the Alaska Division of Elections website to see if they had any reports on the incoming ballots. I found a <a href="https://www.elections.alaska.gov/results/20GENR/data/sovc/CombinedBallotCountReport_Server.pdf">daily updated PDF</a> of mail votes, early votes, rejected ballots, and the ballots outstanding.</p>
+<p><img src="images/early_vote/pdf1.png" alt="plot1"></p>
+<p>Though it&rsquo;s in a PDF, this was the data I was looking for. While the Division of Elections emails out a full updated voter file quite frequently that&rsquo;s very granular and tracks things like party registration, I wanted to use a dataset that was machine-readable on the web. And the resolution down to actual voters was a little too much for what I wanted to track, which was:</p>
+<p><em>What areas of the state are  most enthusiastically particpating in vote-by-mail? Which are not taking part? What areas are seeing the most rejected ballots?</em></p>
+<p>This Alaska House District-level data is locked in the PDF above, but it seemed organized and consistent. I wanted to see if I could break this data out of the PDF and show it how I wanted to see it. Like all of my side projects, it&rsquo;s made for an audeince of one: me. If anyone else enjoys it, that&rsquo;s a bonus.</p>
+<p>My go-to tool for parsing PDFs is <a href="https://tabula.technology/">Tabula</a>. It&rsquo;s what parses the 208-page pdf for my [pfdBot twitterbot] (<a href="http://twitter.com/pfdbot)">http://twitter.com/pfdbot)</a>. Thus I hoped to use the R package <a href="https://cran.r-project.org/web/packages/tabulizer/vignettes/tabulizer.html">Tabulizer</a> and have all of this run in an rscript or rmarkdown report. For the life of me, I could not get its rJava dependency installed on my laptop. I went deep, deep, deep into StackOverflow topics from 10 years ago. I installed many version of Java. I signed up for the Oracle newsletter I think. Many hours went into attempting that.</p>
+<p>My workaround was to use the <a href="https://tabula-py.readthedocs.io/en/latest/">Tabula-py</a> python library for the PDF parsing, and R for the rest. I had one python script that would download the PDF from the Divison of Elections, compare it&rsquo;s update date to the latest date I had saved in a file, and if it was new, then it would use a tabula function to parse and spit out a CSV.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.elections.alaska.gov/results/20GENR/data/sovc/CombinedBallotCountReport_Server.pdf&#34;</span>
+
+tabula<span style="color:#f92672">.</span>convert_into(url, <span style="color:#e6db74">&#34;output_current.csv&#34;</span>, output_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;csv&#34;</span>, pages<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;all&#39;</span>)
+
+</code></pre></div><p>With some projects, the hard parts are easy and the easy parts are hard. This is one of those projects. After running the PDF through tabula-py, I got something that looked like this:</p>
+<p><img src="images/early_vote/csv1.png" alt="plot1"></p>
+<p>Much better. That one line of python is fantastic. After a bunch of reshaping and adding in new fields like percentages in R with dyplyr, I had the base data for the rmarkdown report.  It was not a pretty system but it worked for the three or four weeks that this was running.</p>
+<p>I had been using <a href="https://rmarkdown.rstudio.com/">Rmarkdown</a> to run a handful of reports with COVID-19 information at work, and this seemed like a really nice fit for rmarkdown reports. Load in new data each day, run it, and push to the web.</p>
+<p>This is the <a href="https://benmatheson.github.io/alaska_2020_early_absentee_vote/early_vote_md.html">final product</a>.</p>
+<p>The ggplot thoroughout was pretty basic, though getting the details right is the time-consuming part. I wanted to show all 40 districts at once, so it&rsquo;s a bit dense, but this is what I wanted.</p>
+<p><img src="images/early_vote/hd_2016_status.png" alt="plot1"></p>
+<p>Alaska&rsquo;s 40 House districts cover all the diversity of the state..from the ferry-connected towns in Southeast to the exurban Mat-Su and all the  I wanted to add one level of geographic categorization. It&rsquo;s not intuitive to know that HD33 represents downtown Juneau while HD32 covers Kodiak. So I made up six regional designations, show in the colors of the bars below. These are made up out of thin air.</p>
+<p><img src="images/early_vote/hd_2016_turnout.png" alt="plot1"></p>
+<p>I wanted to show how different the voting landscape was across the state. Vote by mail was far less utilized in rural parts of the state in the west and north compared to urban Anchorage districts. Less than 10% of the 2016-level turnout voted by mail in the west and north, while you see in that mass of light blue bars that nine Anchorage districts were at ~40%.</p>
+<p>I was at a couple points really close to making a map to show the regional trends, but I decided against it. The world has enough election maps.</p>
+<p>The in-person early vote also saw a huge particpation this year. But it was the Juneau Mendenhall Valley (the &ldquo;conservative&rdquo; part of Juneau - shown in green) as well as the Mat-Su districts (shown in red-purple) that really outperfomred with early in-person.</p>
+<p><img src="images/early_vote/hd_participation.png" alt="plot1"></p>
+<p>I brought in some historical data to make the raw numbers a bit more meaningful. I grabbed 2016 vote turnout numbers as well as the Trump-Clinton margin for a partisan measurement. Would redder parts of Alaska follow the national trend and skip the mail voting? (the answer: yes, but with the big exception of HD-38,HD-39, and HD-40 the bush districts).</p>
+<p><img src="images/early_vote/hd_2016_partisan.png" alt="plot1"></p>
+<p>The couple of scatter plots comparing voter registration and vote-by-mail aren&rsquo;t exactly thrilling, but it was useful for day-to-day on-the-fly exploratory data analysis. You can see the same regional trends pop out, though labelling is hard. I wanted to include all 40 labels. If I was doing something for a real presentation, I&rsquo;d be a lot more selective on what&rsquo;s labelled and how.</p>
+<p><img src="images/early_vote/hd_2016_reg_voters.png" alt="plot1"></p>
+<p>I had a lot of fun making a table using the gt pacakge. I&rsquo;d like to do a lot more with it.</p>
+<p><img src="images/early_vote/table.png" alt="plot1"></p>
+<p>This looked something like this:</p>
+<pre tabindex="0"><code>gt(votes_mail_early %&gt;% select (district_number, district_description, ballots_received, ballots_sent, reject, accept_full) %&gt;% arrange(desc(ballots_received))) %&gt;% 
+ data_color(
+    columns = vars(ballots_received),
+    colors = scales::col_numeric(
+      palette = paletteer::paletteer_d(
+        palette = &quot;ggsci::teal_material&quot;
+        ) %&gt;% as.character(),
+      domain = NULL
+      )) %&gt;% 
+   data_color(
+    columns = vars(accept_full),
+    colors = scales::col_numeric(
+      palette = paletteer::paletteer_d(
+        palette = &quot;ggsci::light_blue_material&quot;
+        ) %&gt;% as.character(),
+      domain = NULL
+      )) %&gt;% 
+    cols_label(
+    district_number = &quot;District Number&quot;,
+    district_description = &quot;District&quot;,
+    ballots_received= &quot;Mail Ballots Received&quot;,
+    ballots_sent = &quot;Mail Ballots Sent&quot;,
+    reject = &quot;Mail Ballots Rejected&quot;,
+    accept_full = &quot;Early Vote in Person&quot;
+  ) %&gt;% opt_row_striping() %&gt;% tab_style( cell_text(weight = &quot;bold&quot;), locations = cells_column_labels(columns = vars(district_number, district_description, ballots_received, ballots_sent, reject, accept_full)))
+</code></pre><p>I had the R script do a few system calls to push the data up to a github repository as well as commit the output html to the web.  Not sure if I recommend this.</p>
+<pre tabindex="0"><code>system_call &lt;- paste0(
+  
+  &quot;git add early_vote_md.html &quot; ,  &quot;data/output/&quot;,report_date,&quot;_&quot;,&quot;alaska_early_vote.csv
+    git commit -m  \&quot;update \&quot; 
+    git push origin master&quot;
+  
+)
+
+
+system(system_call)
+
+</code></pre><p>You can <a href="https://benmatheson.github.io/alaska_2020_early_absentee_vote/early_vote_md.html">check out the full website</a>.</p>
+
+    </section>
+    <footer class="pt-8">
+      
+
+      
+
+      
+  
+    <div class="pt-8 article-pagination">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex" href="/posts/gov-oil/">
+              <span class="mr-3 article-pagination-direction">&larr;</span>
+              <span class="flex flex-col">
+                <span class="article-pagination-title mt-[0.1rem] leading-6"
+                  >Alaska Governors' Wild Ride on Oil Prices</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-400 dark:text-neutral-500">
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right" href="/posts/testing-website/">
+              <span class="flex flex-col">
+                <span class="article-pagination-title mt-[0.1rem] leading-6"
+                  >AnchorageCovidTesting.org Website</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-400 dark:text-neutral-500">
+                  
+                </span>
+              </span>
+              <span class="ml-3 article-pagination-direction">&rarr;</span>
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    </footer>
+    
+  </article>
+</main><footer class="py-10">
+  
+  
+  <div class="flex justify-between">
+    <div>
+      
+      <p class="text-sm text-neutral-400 dark:text-neutral-500">
+          &copy;
+          2022
+          Ben Matheson
+      </p>
+      
+      
+    </div>
+    
+    
+  </div>
+  
+  
+</footer>
+</body>
+</html>
