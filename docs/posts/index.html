@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html
   lang="en-US"
-  
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="false"
 ><head>
   <meta charset="utf-8" />
   
@@ -13,7 +16,7 @@
   <title> &middot; Ben Matheson</title>
     <meta name="title" content=" &middot; Ben Matheson" />
   
-  <meta name="description" content="" />
+  
   
   
   
@@ -23,34 +26,25 @@
   
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/schemes/Ocean.min.ff17c50528c7a4a8a8bb8ec41272d63eb936ecefb9ccfa6db45cd1f5cd8b1becf8606745f751ee0d322ac80c9cb96e58aa699b38aa44cff9d2a8b3ff4f05a7b5.css"
-    integrity="sha512-/xfFBSjHpKiou47EEnLWPrk27O&#43;5zPpttFzR9c2LG&#43;z4YGdF91HuDTIqyAycuW5YqmmbOKpEz/nSqLP/TwWntQ=="
-  />
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/compiled/main.min.4076b9cf114dd23cca017f3365e2205a4c9a4b2c0ef4193ccd08883f76e554aa40f674a8f6e77a1b2895be0975ba8e019b0c59996c2eea32e4970ca4d5221653.css"
-    integrity="sha512-QHa5zxFN0jzKAX8zZeIgWkyaSywO9Bk8zQiIP3blVKpA9nSo9ud6GyiVvgl1uo4BmwxZmWwu6jLklwyk1SIWUw=="
-  />
+  
   
   
     
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="/css/custom.min.d6476224aa826a677cb9ab5a2f7b0f9f0adc403cbc11016b0b066253eb756dfadcf871a2147f54f11bf2024f627d85daf4e588f2dadf2c4c5f596e395cc5ada6.css"
-      integrity="sha512-1kdiJKqCamd8uataL3sPnwrcQDy8EQFrCwZiU&#43;t1bfrc&#43;HGiFH9U8RvyAk9ifYXa9OWI8trfLExfWW45XMWtpg=="
-    />
   
   
-    <script>
-      localStorage.removeItem("preferredAppearance");
-    </script>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.6011e7a76e6a02592fbc0fccff519c14bb90e4e8eb4510f43dea784baa71a6e9126cafb7523dca1593a33d54f0d26a1617460ee185d4b2258fa2fab51badb6a2.css"
+    integrity="sha512-YBHnp25qAlkvvA/M/1GcFLuQ5OjrRRD0Pep4S6pxpukSbK&#43;3Uj3KFZOjPVTw0moWF0YO4YXUsiWPovq1G622og=="
+  />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.dbca9e2200cf929a23b55442f2ff09361b8d5290147ff1407f89ed3839f0fea13db4e94f5ae6bf2f3de10d322b4bede74b578455e9cc7d5565314d914602c974.js" integrity="sha512-28qeIgDPkpojtVRC8v8JNhuNUpAUf/FAf4ntODnw/qE9tOlPWua/Lz3hDTIrS&#43;3nS1eEVenMfVVlMU2RRgLJdA=="></script>
+  
+  
   
   
   
@@ -106,65 +100,88 @@
 </head>
 <body
     class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
-  ><header
-  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-800 dark:text-neutral"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 dark:bg-neutral-600 focus:translate-y-0"
+        href="#main-content"
+        ><span class="font-bold ltr:pr-2 rtl:pl-2 text-primary-600 dark:text-primary-400"
+          >&darr;</span
+        >Skip to main content</a
+      >
+    </div><header
+  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral"
 >
   
   <div>
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+        class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
         rel="me"
         href="/"
         >Ben Matheson</a
       >
+    
+
   </div>
   
   
     <nav>
       <ul class="flex flex-col list-none sm:flex-row">
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/posts/"
               title=""
               >Writing</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/projects/"
               title="Projects"
               >Projects</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/contact/"
               title="Contact"
               >Contact</a
             >
           </li>
         
+        
       </ul>
     </nav>
   
 </header>
-<main class="flex-grow">
-  <header>
+<main id="main-content" class="relative grow">
   
-  <section class="prose dark:prose-light">
-    <h1 class="mb-3 text-4xl font-extrabold text-neutral-800"></h1>
-    <section><!-- raw HTML omitted -->
-</section>
-  </section>
-</header>
+  <header>
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral"></h1>
+  </header>
+  <section
+    class="flex flex-col max-w-full prose lg:flex-row dark:prose-invert mt-0"
+  >
+    
+    <div class="min-w-0 min-h-0 max-w-prose">
+      <!-- raw HTML omitted -->
 
+    </div>
+  </section>
   
     <section>
       
@@ -174,15 +191,15 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/gov-oil/"
-        >Alaska Governors&#39; Wild Ride on Oil Prices</a
+        >Alaska Governors' Wild Ride on Oil Prices</a
       >
     
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -200,8 +217,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -209,10 +230,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       In 2018, prior to the outset of the new Governor Mike Dunleavy administration, I wanted to see how the oil markets had been for each of Alaska&rsquo;s governors on a relative basis.
     </div>
   
@@ -223,7 +247,7 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/mail-in-2020/"
         >Alaska 2020 Early Vote Tracker - Rmarkdown report</a
       >
@@ -231,7 +255,7 @@
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -249,8 +273,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -258,10 +286,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       **TL:DR, I made an rmarkdown site tracking Alaska&rsquo;s early and mail vote as ballots arrived each day in October/November 2020.
     </div>
   
@@ -275,7 +306,7 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/testing-website/"
         >AnchorageCovidTesting.org Website</a
       >
@@ -283,7 +314,7 @@
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -301,8 +332,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -310,10 +345,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       As part of a test and trace COVID-19 strategy, the Municipality of Anchorage set up a system of ~six COVID-19 testing sites in 2020 to give residents access to free and safe testing.
     </div>
   
@@ -324,7 +362,7 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/iditarod_scratches/"
         >2020 Iditarod Mushers Scratched at the Highest Rate in 40 Years</a
       >
@@ -332,7 +370,7 @@
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -350,8 +388,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -359,10 +401,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       The 2020 Iditarod Trail Sled Dog race will be remembered as the year the coronavirus upended the final days of the race and saw checkpoints lock down as the race finished in Nome.
     </div>
   
@@ -376,7 +421,7 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/pfdincome/"
         >For All Generations of Alaskans: How Sustainable is the Statutory Alaska Permanent Fund Dividend?</a
       >
@@ -384,7 +429,7 @@
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -402,8 +447,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -411,10 +460,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       Image: from the 1989 annual report.
     </div>
   
@@ -425,7 +477,7 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/wildfire-animation/"
         >Alaska Wildfire Growth Animations</a
       >
@@ -433,7 +485,7 @@
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -451,8 +503,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -460,10 +516,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       The 2019 fire season has been destructive and long-lasting.
     </div>
   
@@ -474,7 +533,7 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/iditarod-zoom/"
         >Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map</a
       >
@@ -482,7 +541,7 @@
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -500,8 +559,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -509,10 +572,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       When March arrives in Alaska, there are two things on everyone&rsquo;s mind:
     </div>
   
@@ -526,7 +592,7 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/ice_contracts/"
         >ICE Contracts in Every State</a
       >
@@ -534,7 +600,7 @@
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -552,8 +618,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -561,10 +631,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       Like any government bureaucracy, the Immigration and Customs Enforcement’s Detention Compliance and Removals Office buys a a variety of supplies to run their detention facilities and maintain their offices.
     </div>
   
@@ -575,7 +648,7 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/federal_contracts/"
         >Beltway Billions Data Visualization</a
       >
@@ -583,7 +656,7 @@
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -601,8 +674,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -610,10 +687,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       The government spends billions of dollars per year on a dizzying array of gear and specialized services: office furniture, cloud computing, breakfast cereal, and advanced weapons systems are among destinations of taxpayer funds.
     </div>
   
@@ -627,7 +707,7 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-offset-small text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
         href="/posts/energy-hackathon/"
         >Gas Hackathon</a
       >
@@ -635,7 +715,7 @@
     
     
   </h3>
-  <div class="text-sm text-neutral-400 dark:text-neutral-500">
+  <div class="text-sm text-neutral-500 dark:text-neutral-400">
     
 
 
@@ -653,8 +733,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -662,10 +746,13 @@
     
   </div>
 
+  
+  
+
 
   </div>
   
-    <div class="py-1 prose dark:prose-light">
+    <div class="py-1 prose dark:prose-invert">
       I recently took part in Launch Alaska&rsquo;s Renewable Energy Reverse Hack-a-thon.
     </div>
   
@@ -678,13 +765,16 @@
 
 
   
-</main><footer class="py-10">
+
+      
+    </main>
+    <footer class="py-10">
   
   
   <div class="flex justify-between">
     <div>
       
-      <p class="text-sm text-neutral-400 dark:text-neutral-500">
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2022
           Ben Matheson

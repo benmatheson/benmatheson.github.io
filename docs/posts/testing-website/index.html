@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html
   lang="en-US"
-  
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="false"
 ><head>
   <meta charset="utf-8" />
   
@@ -13,7 +16,7 @@
   <title>AnchorageCovidTesting.org Website &middot; Ben Matheson</title>
     <meta name="title" content="AnchorageCovidTesting.org Website &middot; Ben Matheson" />
   
-  <meta name="description" content="" />
+  
   
   
   
@@ -22,34 +25,25 @@
   
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/schemes/Ocean.min.ff17c50528c7a4a8a8bb8ec41272d63eb936ecefb9ccfa6db45cd1f5cd8b1becf8606745f751ee0d322ac80c9cb96e58aa699b38aa44cff9d2a8b3ff4f05a7b5.css"
-    integrity="sha512-/xfFBSjHpKiou47EEnLWPrk27O&#43;5zPpttFzR9c2LG&#43;z4YGdF91HuDTIqyAycuW5YqmmbOKpEz/nSqLP/TwWntQ=="
-  />
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/compiled/main.min.4076b9cf114dd23cca017f3365e2205a4c9a4b2c0ef4193ccd08883f76e554aa40f674a8f6e77a1b2895be0975ba8e019b0c59996c2eea32e4970ca4d5221653.css"
-    integrity="sha512-QHa5zxFN0jzKAX8zZeIgWkyaSywO9Bk8zQiIP3blVKpA9nSo9ud6GyiVvgl1uo4BmwxZmWwu6jLklwyk1SIWUw=="
-  />
+  
   
   
     
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="/css/custom.min.d6476224aa826a677cb9ab5a2f7b0f9f0adc403cbc11016b0b066253eb756dfadcf871a2147f54f11bf2024f627d85daf4e588f2dadf2c4c5f596e395cc5ada6.css"
-      integrity="sha512-1kdiJKqCamd8uataL3sPnwrcQDy8EQFrCwZiU&#43;t1bfrc&#43;HGiFH9U8RvyAk9ifYXa9OWI8trfLExfWW45XMWtpg=="
-    />
   
   
-    <script>
-      localStorage.removeItem("preferredAppearance");
-    </script>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.6011e7a76e6a02592fbc0fccff519c14bb90e4e8eb4510f43dea784baa71a6e9126cafb7523dca1593a33d54f0d26a1617460ee185d4b2258fa2fab51badb6a2.css"
+    integrity="sha512-YBHnp25qAlkvvA/M/1GcFLuQ5OjrRRD0Pep4S6pxpukSbK&#43;3Uj3KFZOjPVTw0moWF0YO4YXUsiWPovq1G622og=="
+  />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.dbca9e2200cf929a23b55442f2ff09361b8d5290147ff1407f89ed3839f0fea13db4e94f5ae6bf2f3de10d322b4bede74b578455e9cc7d5565314d914602c974.js" integrity="sha512-28qeIgDPkpojtVRC8v8JNhuNUpAUf/FAf4ntODnw/qE9tOlPWua/Lz3hDTIrS&#43;3nS1eEVenMfVVlMU2RRgLJdA=="></script>
+  
+  
   
   
   
@@ -78,31 +72,31 @@
 
   
   <script type="application/ld+json">
-  {
+  [{
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "articleSection": "",
     "name": "AnchorageCovidTesting.org Website",
     "headline": "AnchorageCovidTesting.org Website",
-    "description": "As part of a test and trace COVID-19 strategy, the Municipality of Anchorage set up a system of ~six COVID-19 testing sites in 2020 to give residents access to free and safe testing.",
+    
+    "abstract": "As part of a test and trace COVID-19 strategy, the Municipality of Anchorage set up a system of ~six COVID-19 testing sites in 2020 to give residents access to free and safe testing.",
     "inLanguage": "en-US",
+    "url" : "\/posts\/testing-website\/",
     "author" : {
       "@type": "Person",
       "name": "Ben Matheson"
     },
-    "creator" : {
-      "@type": "Person",
-      "name": "Ben Matheson"
-    },
-    "copyrightHolder": "Ben Matheson",
     "copyrightYear": "2020",
     "dateCreated": "2020-12-30T22:05:17-08:00",
     "datePublished": "2020-12-30T22:05:17-08:00",
+    
     "dateModified": "2020-12-30T22:05:17-08:00",
-    "url" : "\/posts\/testing-website\/",
-    "wordCount": "977",
-    "keywords": []
-  }
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "977"
+  }]
   </script>
 
 
@@ -134,63 +128,81 @@
 </head>
 <body
     class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
-  ><header
-  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-800 dark:text-neutral"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 dark:bg-neutral-600 focus:translate-y-0"
+        href="#main-content"
+        ><span class="font-bold ltr:pr-2 rtl:pl-2 text-primary-600 dark:text-primary-400"
+          >&darr;</span
+        >Skip to main content</a
+      >
+    </div><header
+  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral"
 >
   
   <div>
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+        class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
         rel="me"
         href="/"
         >Ben Matheson</a
       >
+    
+
   </div>
   
   
     <nav>
       <ul class="flex flex-col list-none sm:flex-row">
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/posts/"
               title=""
               >Writing</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/projects/"
               title="Projects"
               >Projects</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/contact/"
               title="Contact"
               >Contact</a
             >
           </li>
         
+        
       </ul>
     </nav>
   
 </header>
-<main class="flex-grow">
-  <article class="max-w-prose">
-    <header>
+<main id="main-content" class="relative grow">
+  <article>
+    <header class="max-w-prose">
       
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-800 dark:text-neutral">
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
         AnchorageCovidTesting.org Website
       </h1>
-      <div class="mt-8 mb-12 text-base text-neutral-400 dark:text-neutral-500">
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400">
         
 
 
@@ -211,8 +223,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -220,16 +236,41 @@
     
   </div>
 
+  
+  
+
 
       </div>
     </header>
-    <section class="prose dark:prose-light">
-      <p>As part of a test and trace COVID-19 strategy, the Municipality of Anchorage set up a system of ~six COVID-19 testing sites in 2020 to give residents access to free and safe testing. In my work for the <a href="https://medium.com/anchorage-i-team/about-us-574f8ac4d839">Anchorage Innovation Team</a>, I worked with public health officials to help people get access to this testing.</p>
+    <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
+      
+      <div class="min-w-0 min-h-0 max-w-prose">
+        <p>As part of a test and trace COVID-19 strategy, the Municipality of Anchorage set up a system of ~six COVID-19 testing sites in 2020 to give residents access to free and safe testing. In my work for the <a href="https://medium.com/anchorage-i-team/about-us-574f8ac4d839">Anchorage Innovation Team</a>, I worked with public health officials to help people get access to this testing.</p>
 <p>**<em><strong>TL:DR, we made a lightwight, mobile-first website to connect people to free COVID-19 testing.</strong></em> Check out the <a href="https://anchoragecovidtest.org/">live site</a>, which is active at least as of the end of December, 2020.</p>
 <p>While it was very tempting to build a map as the main interface (and the state of Alaska <a href="https://alaska-dhss.maps.arcgis.com/apps/webappviewer/index.html?id=2d92b77bc8044329a1ee3954b063bd8c">did</a>) we held back and tried to focus on a much more focused question:</p>
 <p><em><strong>“Where can I get a free COVID-19 test today (or tomorrow~ish)?</strong></em></p>
 <p>Here&rsquo;s what we had in December:</p>
-<p><img src="images/covid/covid_screen.png" alt="plot1">
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_330x0_resize_box_3.png 330w,
+          /posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_660x0_resize_box_3.png 660w,
+          /posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_1024x0_resize_box_3.png 1024w,
+          /posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_1320x0_resize_box_3.png 2x"
+        src="/posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_660x0_resize_box_3.png"
+        alt="plot1"
+      />
+      
+    </figure>
+  
+
+
 This was to be a lightning fast, somewhat barebones site that tells you: here&rsquo;s a few spots you can go. Not which one is closest to you. We thought of that as a seperate probelem, so for locations, we simply linked to the Google Maps listing for each location. We&rsquo;re not going to build a better map or routing engine than Google, so this helps people use a tool that they already do. Making people navigate a complex ESRI map is unecessary and in my opinion adds more complexity than it does orient people to resources.</p>
 <p>This task is more about reducing complexity and <a href="https://www.bi.team/publications/making-the-change-behavioural-factors-in-person-and-community-centred-approaches-for-health-and-wellbeing/">friction costs</a> that surround a not-fun task. The cognitive load of coronavirus is already large before someone gets a test.</p>
 <ul>
@@ -242,49 +283,221 @@ This was to be a lightning fast, somewhat barebones site that tells you: here&rs
 <p>COVID-19 testing should have as little friction as possible.</p>
 <p>The size of the menu was about right: there are between one and six sites open each day. We&rsquo;re not dealing with <a href="https://www.nychealthandhospitals.org/covid-19-testing-sites/">several dozen</a> like New York.</p>
 <p>The primary axis of the site is time, rather than location. The only real UI interactive elements are big buttons for <strong>Previous Day</strong> and <strong>Next Day</strong>.</p>
-<p><img src="images/covid/covid_days.gif" alt="plot1"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_330x0_resize_box.gif 330w,
+          /posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_660x0_resize_box.gif 660w,
+          /posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_1024x0_resize_box.gif 1024w,
+          /posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_1320x0_resize_box.gif 2x"
+        src="/posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_660x0_resize_box.gif"
+        alt="plot1"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>We didn&rsquo;t build out a full calendar or get into appointments or anything like that. And while there are a lot more options to get a COVID-19 test, such as many primary care clinics and rapid antigen testing, the city-funded sites help simplify the selection process for residents. They&rsquo;re free, open to all, and allow drive-through or walk-up access.</p>
-<p><img src="images/covid/covid_rv.jpg" alt="plot1"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_330x0_resize_q75_box.jpg 330w,
+          /posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_660x0_resize_q75_box.jpg 660w,
+          /posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_1024x0_resize_q75_box.jpg 1024w,
+          /posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_1320x0_resize_q75_box.jpg 2x"
+        src="/posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_660x0_resize_q75_box.jpg"
+        alt="plot1"
+      />
+      
+    </figure>
+  
+
+</p>
 <p><em>This is what the Fairview testing site looked like in November. It&rsquo;s basically an RV that you drive or walk up to.</em></p>
 <p>One other choice we/I made is to demphasize the pre-registration process. The test vendors' online registration process is unweildly and not entirely necessary. So we tell people that, in fewer words.</p>
-<p><img src="images/covid/register.PNG" alt="plot1"></p>
-<h2 id="google-sheets-as-a-cms">Google Sheets as a CMS <a class="heading-anchor" href="#google-sheets-as-a-cms" aria-label="Anchor">#</a></h2>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_330x0_resize_box_3.PNG 330w,
+          /posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_660x0_resize_box_3.PNG 660w,
+          /posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_1024x0_resize_box_3.PNG 1024w,
+          /posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_1320x0_resize_box_3.PNG 2x"
+        src="/posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_660x0_resize_box_3.PNG"
+        alt="plot1"
+      />
+      
+    </figure>
+  
+
+</p>
+<h2 id="google-sheets-as-a-cms" class="relative group">Google Sheets as a CMS <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#google-sheets-as-a-cms" aria-label="Anchor">#</a></span></h2>
 <p>The initial version of this site during the end summer of 2020 was mostly vanilla javascript. It was a very very soft launch. Because testing sites ran on a consistent weekly schedule, I hardcoded that into the site to show the right test sites on the right days. But as the pandemic grew and the testing regime added in new complexity, such as pop-up testing sites at schoosl and shopping areas, the site needed a more nimble way to keep it up to date. And preferrably by not me.</p>
 <p>I made a Google sheet that allowed for a shifting schedule of recurring and pop-up testing sites. The Google Sheets API will output a JSON file that you can hit. The site reads the JSON.  It’s easy to update and amazingly has not broken.</p>
-<p><img src="images/covid/covid_sheet.png" alt="plot1"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_330x0_resize_box_3.png 330w,
+          /posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_660x0_resize_box_3.png 660w,
+          /posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_1024x0_resize_box_3.png 1024w,
+          /posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_1320x0_resize_box_3.png 2x"
+        src="/posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_660x0_resize_box_3.png"
+        alt="plot1"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>What I wanted to do is make html out of some data that is subject to change. This seems like a good use case for React. And the React is pretty dead simple. I have a &ldquo;location&rdquo; component that reads the data from the sheet and builds a little div with the information about the testing site. It&rsquo;s great to have new html elements render on the fly based on the ever-changing schedule.</p>
-<h2 id="busyness-indicators">Busyness Indicators <a class="heading-anchor" href="#busyness-indicators" aria-label="Anchor">#</a></h2>
+<h2 id="busyness-indicators" class="relative group">Busyness Indicators <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#busyness-indicators" aria-label="Anchor">#</a></span></h2>
 <p>We received a lot of requests for the expected wait times for each site. While we have not been able to get a regular update from the testing sites (they are busy collecting samples), we have one current dataset that would make something possible. I drew direct inspriation from the Google Maps &ldquo;Popular Times&rdquo; feature.
-<img src="images/covid/busy.png" alt="plot1"></p>
+
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_330x0_resize_box_3.png 330w,
+          /posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_660x0_resize_box_3.png 660w,
+          /posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_1024x0_resize_box_3.png 1024w,
+          /posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_1320x0_resize_box_3.png 2x"
+        src="/posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_660x0_resize_box_3.png"
+        alt="plot1"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>We don&rsquo;t have cell phone data like Google does, (thank god) but we do have a proxy that would work. I have a seperate ongoing project tracking the test turnaround times (the goal of the Emergency Operation Centers is to have tests results back in less than 72 hours). The dataset that powers that analysis has granular collection data, down to the minute. With this, I was able to summarize the number of tests collected per hour at each site over the most recent several days.</p>
-<p><img src="images/covid/per_hour.PNG" alt="plot1"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_330x0_resize_box_3.PNG 330w,
+          /posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_660x0_resize_box_3.PNG 660w,
+          /posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_1024x0_resize_box_3.PNG 1024w,
+          /posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_1320x0_resize_box_3.PNG 2x"
+        src="/posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_660x0_resize_box_3.PNG"
+        alt="plot1"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>The green bar highlights the current hour of the day, based on whatever the system time is. The barchart definitely does not <em><strong>need</strong></em> to be animated, but it <em><strong>is</strong></em> animated. In action here:</p>
-<p><img src="images/covid/covid_busy.gif" alt="plot1"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_330x0_resize_box.gif 330w,
+          /posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_660x0_resize_box.gif 660w,
+          /posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_1024x0_resize_box.gif 1024w,
+          /posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_1320x0_resize_box.gif 2x"
+        src="/posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_660x0_resize_box.gif"
+        alt="plot1"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>The site definitely is minimalist, but it’s made for speed and one purpose - figure out when and where to get a free COVID-19 test. We’ve tried to maximize the speed and tested constantly throughout the updates.</p>
-<p><img src="images/covid/desktop_score.PNG" alt="plot1"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_330x0_resize_box_3.PNG 330w,
+          /posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_660x0_resize_box_3.PNG 660w,
+          /posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_1024x0_resize_box_3.PNG 1024w,
+          /posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_1320x0_resize_box_3.PNG 2x"
+        src="/posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_660x0_resize_box_3.PNG"
+        alt="plot1"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>Mobile and tablet traffic is consistently about 2/3rds of the traffic, and the page is designed to make the most of a mobile phone screen and be lightweight. Desktop is much less optimized, but it works the same.</p>
 <p>Many <a href="https://coronavirus-response-alaska-dhss.hub.arcgis.com/">official websites</a>, while rich with data, are poorly designed for mobile devices and are a bit heavy. While there are still several spots to trim, this loads fast for phones and those with a marginal connection.</p>
 
+      </div>
     </section>
-    <footer class="pt-8">
+    <footer class="pt-8 max-w-prose">
       
 
       
 
       
   
-    <div class="pt-8 article-pagination">
+    
+    
+    
+    <div class="pt-8">
       <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex" href="/posts/mail-in-2020/">
-              <span class="mr-3 article-pagination-direction">&larr;</span>
+            <a class="flex group" href="/posts/iditarod_scratches/">
+              <span
+                class="mr-3 ltr:inline rtl:hidden text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 ltr:hidden rtl:inline text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
               <span class="flex flex-col">
-                <span class="article-pagination-title mt-[0.1rem] leading-6"
-                  >Alaska 2020 Early Vote Tracker - Rmarkdown report</span
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >2020 Iditarod Mushers Scratched at the Highest Rate in 40 Years</span
                 >
-                <span class="mt-[0.1rem] text-xs text-neutral-400 dark:text-neutral-500">
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
                 </span>
               </span>
@@ -293,16 +506,24 @@ This was to be a lightning fast, somewhat barebones site that tells you: here&rs
         </span>
         <span>
           
-            <a class="flex text-right" href="/posts/iditarod_scratches/">
+            <a class="flex text-right group" href="/posts/mail-in-2020/">
               <span class="flex flex-col">
-                <span class="article-pagination-title mt-[0.1rem] leading-6"
-                  >2020 Iditarod Mushers Scratched at the Highest Rate in 40 Years</span
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Alaska 2020 Early Vote Tracker - Rmarkdown report</span
                 >
-                <span class="mt-[0.1rem] text-xs text-neutral-400 dark:text-neutral-500">
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
                 </span>
               </span>
-              <span class="ml-3 article-pagination-direction">&rarr;</span>
+              <span
+                class="ml-3 ltr:inline rtl:hidden text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 ltr:hidden rtl:inline text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
             </a>
           
         </span>
@@ -314,13 +535,29 @@ This was to be a lightning fast, somewhat barebones site that tells you: here&rs
     </footer>
     
   </article>
-</main><footer class="py-10">
+
+      
+        <div
+          class="absolute top-[110vh] ltr:right-0 rtl:left-0 w-12 pointer-events-none bottom-[-5.5rem]"
+        >
+          <a
+            href="#the-top"
+            class="w-12 h-12 sticky pointer-events-auto top-[calc(100vh-5rem)] bg-neutral/50 dark:bg-neutral-800/50 backdrop-blur rounded-full text-xl flex items-center justify-center text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      
+    </main>
+    <footer class="py-10">
   
   
   <div class="flex justify-between">
     <div>
       
-      <p class="text-sm text-neutral-400 dark:text-neutral-500">
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2022
           Ben Matheson

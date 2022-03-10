@@ -4,7 +4,7 @@
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="light"
-  data-auto-appearance="true"
+  data-auto-appearance="false"
 ><head>
   <meta charset="utf-8" />
   
@@ -16,7 +16,7 @@
   <title>Projects &middot; Ben Matheson</title>
     <meta name="title" content="Projects &middot; Ben Matheson" />
   
-  <meta name="description" content="" />
+  
   
   
   
@@ -25,34 +25,25 @@
   
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/schemes/Ocean.min.ff17c50528c7a4a8a8bb8ec41272d63eb936ecefb9ccfa6db45cd1f5cd8b1becf8606745f751ee0d322ac80c9cb96e58aa699b38aa44cff9d2a8b3ff4f05a7b5.css"
-    integrity="sha512-/xfFBSjHpKiou47EEnLWPrk27O&#43;5zPpttFzR9c2LG&#43;z4YGdF91HuDTIqyAycuW5YqmmbOKpEz/nSqLP/TwWntQ=="
-  />
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/compiled/main.min.4076b9cf114dd23cca017f3365e2205a4c9a4b2c0ef4193ccd08883f76e554aa40f674a8f6e77a1b2895be0975ba8e019b0c59996c2eea32e4970ca4d5221653.css"
-    integrity="sha512-QHa5zxFN0jzKAX8zZeIgWkyaSywO9Bk8zQiIP3blVKpA9nSo9ud6GyiVvgl1uo4BmwxZmWwu6jLklwyk1SIWUw=="
-  />
+  
   
   
     
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="/css/custom.min.d6476224aa826a677cb9ab5a2f7b0f9f0adc403cbc11016b0b066253eb756dfadcf871a2147f54f11bf2024f627d85daf4e588f2dadf2c4c5f596e395cc5ada6.css"
-      integrity="sha512-1kdiJKqCamd8uataL3sPnwrcQDy8EQFrCwZiU&#43;t1bfrc&#43;HGiFH9U8RvyAk9ifYXa9OWI8trfLExfWW45XMWtpg=="
-    />
   
   
-    <script>
-      localStorage.removeItem("preferredAppearance");
-    </script>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.6011e7a76e6a02592fbc0fccff519c14bb90e4e8eb4510f43dea784baa71a6e9126cafb7523dca1593a33d54f0d26a1617460ee185d4b2258fa2fab51badb6a2.css"
+    integrity="sha512-YBHnp25qAlkvvA/M/1GcFLuQ5OjrRRD0Pep4S6pxpukSbK&#43;3Uj3KFZOjPVTw0moWF0YO4YXUsiWPovq1G622og=="
+  />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.dbca9e2200cf929a23b55442f2ff09361b8d5290147ff1407f89ed3839f0fea13db4e94f5ae6bf2f3de10d322b4bede74b578455e9cc7d5565314d914602c974.js" integrity="sha512-28qeIgDPkpojtVRC8v8JNhuNUpAUf/FAf4ntODnw/qE9tOlPWua/Lz3hDTIrS&#43;3nS1eEVenMfVVlMU2RRgLJdA=="></script>
+  
+  
   
   
   
@@ -81,31 +72,31 @@
 
   
   <script type="application/ld+json">
-  {
+  [{
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "articleSection": "",
     "name": "Projects",
     "headline": "Projects",
-    "description": "",
+    
+    
     "inLanguage": "en-US",
+    "url" : "\/projects\/",
     "author" : {
       "@type": "Person",
       "name": "Ben Matheson"
     },
-    "creator" : {
-      "@type": "Person",
-      "name": "Ben Matheson"
-    },
-    "copyrightHolder": "Ben Matheson",
     "copyrightYear": "2019",
     "dateCreated": "2019-08-14T22:05:17-08:00",
     "datePublished": "2019-08-14T22:05:17-08:00",
+    
     "dateModified": "2019-08-14T22:05:17-08:00",
-    "url" : "\/projects\/",
-    "wordCount": "0",
-    "keywords": []
-  }
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "0"
+  }]
   </script>
 
 
@@ -139,49 +130,58 @@
     class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
   >
     <header
-  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-800 dark:text-neutral"
+  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral"
 >
   
   <div>
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+        class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
         rel="me"
         href="/"
         >Ben Matheson</a
       >
+    
+
   </div>
   
   
     <nav>
       <ul class="flex flex-col list-none sm:flex-row">
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/posts/"
               title=""
               >Writing</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/projects/"
               title="Projects"
               >Projects</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/contact/"
               title="Contact"
               >Contact</a
             >
           </li>
+        
         
       </ul>
     </nav>
@@ -211,7 +211,7 @@
                 <br />
                 <br />
 
-            This cool website shows daily COVID-19 testing locations across Anchorage, Alaska. It's a radically simplified testing finder: no maps, no forms, no filters. This is used by the Municipality of Anchorage.             
+            This website shows daily COVID-19 testing locations across Anchorage, Alaska. No maps, no forms, no filters. This is used by the city of Anchorage.             
             </div>
 
 
@@ -219,30 +219,7 @@
         </a>
 
 
-        <a href= "../posts/iditarod-zoom/">
-
-            <div class="projectDiv flex-item">
-        
-                <img src ="images/ezgif-2-3198e50deb64.gif">
-              <span class="bolder"> Flying 1,000 Miles on the Iditarod Trail</span>
-              <br />
-              <br />
-                This Mapbox-gl D3 experiment to simulate an AR visualization of the Iditarod Trail Sled Dog Race - blending race results visualizations, satellite imagery, and 1,000 miles of simulated flying along the trail. 
-                                </div>
-
-</a>
-<a href="https://benmatheson.github.io/iditarod/">
-                <div class="projectDiv flex-item">
-                    <img src="images/gifIditard1.gif">
-
-                    <span class="bolder"> Iditarod D3</span>
-                    <br />
-                    <br />
-                    One of my first D3 projects. This set of D3 visualizations involving scraping 40 years of Iditarod Trail Sled Dog race splits. 
-                </div>
-
-
-                </a>
+     
 
 
                 <a href= "../posts/federal_contracts/">
@@ -269,7 +246,7 @@
         </span>
         <br />
         <br />
-This D3 and React project allows users to create a custom holding period (in years) and a custom portfolio of assets and compare returns with historical data since 1928. This is my first time blending a React DOM and UI with D3's calcultors.               
+This D3 and React project allows users to create a custom holding period portfolio of assets and compare returns with historical data.
   </div>
 
 </a>
@@ -292,7 +269,7 @@ This D3 and React project allows users to create a custom holding period (in yea
 
 
 
-<a href= "https://benmatheson.github.io/migrationMap/index.html)">
+<a href= "https://benmatheson.github.io/migrationMap/index.html">
 
 
                 <div class="projectDiv flex-item">
@@ -331,21 +308,7 @@ Experimental D3 for exploring airport runway orientations across the United Stat
 
 
 
-<a href= "../posts/iditarod_scratches/">
 
-                <div class="projectDiv flex-item">
-
-  
-  <img src="images/all_animation_small.gif">
-
-
-  <span class="bolder">    Iditarod Scratches
-</span>
-<br />
-              <br />
-Exploring a particularly large amount of Iditrod Sled Dog Race scratches. 
-</div>
-</a>
 
 <a href= "https://benmatheson.github.io/ice/src/">
 
@@ -361,9 +324,161 @@ Exploring a particularly large amount of Iditrod Sled Dog Race scratches.
 
 <br />
               <br />
-Experimental react.js app to organize contracts.</div>
+Experimental react.js app to organize contracts.</div></a>
+
+
+
+
+
+
+
+
+<a href= "https://benmatheson.github.io/wherewemove/">
+  <div class="projectDiv flex-item">
+<img src="images/map1.gif">
+<span class="bolder">    Where We Move
+</span>
+<br />
+<br />
+D3 map redrawing based on mouseover. Inspired by NYTimes.
+</div></a>
+
+
+<a href= "https://upbeat-goodall-6665f2.netlify.app/">
+  <div class="projectDiv flex-item">
+<img src="images/weed.jpg">
+<span class="bolder">    Marijuana Stores
+</span>
+<br />
+<br />
+Exploring the endlessly creative Alaska marijuana store names with React.
+</div></a>
+
+
+<a href= "https://benmatheson.github.io/amazon/">
+  <div class="projectDiv flex-item">
+<img src="images/AWS.png">
+<span class="bolder">    Amazon Text Analysis
+</span>
+<br />
+<br />
+R tidytext sentiment and topic analysis of two decades of Amazon shareholder letters + D3 visualizations.
+</div></a>
+
+<a href= "http://longline.org/radar/index.html">
+  <div class="projectDiv flex-item">
+<img src="images/longline.jpg">
+<span class="bolder">    Longline Podcast Website
+</span>
+<br />
+<br />
+Longform podcast website. Pilot episode about Alaska long range radar installations.
+</div></a>
+
+<a href= "https://benmatheson.github.io/PFD_invest_simulation/">
+  <div class="projectDiv flex-item">
+<img src="images/pfd_calculator.jpg">
+<span class="bolder">    PFD Invest
+</span>
+<br />
+<br />
+A what-if calculator for compounding Alaska Permanent Fund Dividends over four decades. One of my first React projects.
+</div></a>
+
+
+<a href= "https://twitter.com/pfdbot">
+  <div class="projectDiv flex-item">
+<img src="images/bot2.png">
+<span class="bolder">    Permanent Fund Holdings Twitter Bot
+</span>
+<br />
+<br />
+A node.js bot that tweets the thousands of companies Alaskans own in the Alaska Permanent Fund.</div></a>
+
+
+
+<a href= "https://akgen1.netlify.app/">
+  <div class="projectDiv flex-item">
+<img src="images/election_map.jpg">
+<span class="bolder">    Election Precinct Map</span>
+<br />
+<br />
+Mapbox-GL election results precinct map for Anchroage Daily News. </div></a>
+
+
 
                 </div>
+
+                <p id="iditarodProjects" class="iditarod_section"> Iditarod Projects</p>
+
+
+
+                <div class="container-flex">
+
+
+
+
+
+
+
+
+
+
+                  <a href= "../posts/iditarod-zoom/">
+
+                    <div class="projectDiv flex-item">
+                
+                        <img src ="images/ezgif-2-3198e50deb64.gif">
+                      <span class="bolder"> Flying 1,000 Miles on the Iditarod Trail</span>
+                      <br />
+                      <br />
+                        This Mapbox-gl D3 experiment blends race results visualizations, satellite imagery, and 1,000 miles of simulated flying along the trail. 
+                                        </div>
+        
+        </a>
+        <a href="https://benmatheson.github.io/iditarod/">
+                        <div class="projectDiv flex-item">
+                            <img src="images/gifIditard1.gif">
+        
+                            <span class="bolder"> Iditarod D3</span>
+                            <br />
+                            <br />
+                            One of my first D3 projects. This set of D3 visualizations involving scraping 40 years of Iditarod Trail Sled Dog race splits. 
+                        </div>
+        
+        
+                        </a>
+
+                  <a href= "https://benmatheson.github.io/iditarod2019/">
+                    <div class="projectDiv flex-item">
+                  <img src="images/irod.gif">
+                  <span class="bolder">   Iditarod Checkpoint Animation
+                  </span>
+                  <br />
+                  <br />
+                  This animation recreates the entire 2019 Iditarod using checkpoint times sheets. R and D3. Best on desktop.
+                  </div></a>
+
+                  <a href= "../posts/iditarod_scratches/">
+
+                    <div class="projectDiv flex-item">
+    
+      
+      <img src="images/all_animation_small.gif">
+    
+    
+      <span class="bolder">    Iditarod Scratches
+    </span>
+    <br />
+                  <br />
+    Exploring a particularly large amount of Iditrod Sled Dog Race scratches. 
+    </div>
+    </a>
+
+
+</div>
+
+
 
 
     </main>
@@ -373,7 +488,7 @@ Experimental react.js app to organize contracts.</div>
   <div class="flex justify-between">
     <div>
       
-      <p class="text-sm text-neutral-400 dark:text-neutral-500">
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2022
           Ben Matheson

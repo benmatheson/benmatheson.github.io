@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html
   lang="en-US"
-  
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="false"
 ><head>
   <meta charset="utf-8" />
   
@@ -13,7 +16,7 @@
   <title>Beltway Billions Data Visualization &middot; Ben Matheson</title>
     <meta name="title" content="Beltway Billions Data Visualization &middot; Ben Matheson" />
   
-  <meta name="description" content="" />
+  
   
   
   
@@ -22,34 +25,25 @@
   
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/schemes/Ocean.min.ff17c50528c7a4a8a8bb8ec41272d63eb936ecefb9ccfa6db45cd1f5cd8b1becf8606745f751ee0d322ac80c9cb96e58aa699b38aa44cff9d2a8b3ff4f05a7b5.css"
-    integrity="sha512-/xfFBSjHpKiou47EEnLWPrk27O&#43;5zPpttFzR9c2LG&#43;z4YGdF91HuDTIqyAycuW5YqmmbOKpEz/nSqLP/TwWntQ=="
-  />
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/compiled/main.min.4076b9cf114dd23cca017f3365e2205a4c9a4b2c0ef4193ccd08883f76e554aa40f674a8f6e77a1b2895be0975ba8e019b0c59996c2eea32e4970ca4d5221653.css"
-    integrity="sha512-QHa5zxFN0jzKAX8zZeIgWkyaSywO9Bk8zQiIP3blVKpA9nSo9ud6GyiVvgl1uo4BmwxZmWwu6jLklwyk1SIWUw=="
-  />
+  
   
   
     
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="/css/custom.min.d6476224aa826a677cb9ab5a2f7b0f9f0adc403cbc11016b0b066253eb756dfadcf871a2147f54f11bf2024f627d85daf4e588f2dadf2c4c5f596e395cc5ada6.css"
-      integrity="sha512-1kdiJKqCamd8uataL3sPnwrcQDy8EQFrCwZiU&#43;t1bfrc&#43;HGiFH9U8RvyAk9ifYXa9OWI8trfLExfWW45XMWtpg=="
-    />
   
   
-    <script>
-      localStorage.removeItem("preferredAppearance");
-    </script>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.6011e7a76e6a02592fbc0fccff519c14bb90e4e8eb4510f43dea784baa71a6e9126cafb7523dca1593a33d54f0d26a1617460ee185d4b2258fa2fab51badb6a2.css"
+    integrity="sha512-YBHnp25qAlkvvA/M/1GcFLuQ5OjrRRD0Pep4S6pxpukSbK&#43;3Uj3KFZOjPVTw0moWF0YO4YXUsiWPovq1G622og=="
+  />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.dbca9e2200cf929a23b55442f2ff09361b8d5290147ff1407f89ed3839f0fea13db4e94f5ae6bf2f3de10d322b4bede74b578455e9cc7d5565314d914602c974.js" integrity="sha512-28qeIgDPkpojtVRC8v8JNhuNUpAUf/FAf4ntODnw/qE9tOlPWua/Lz3hDTIrS&#43;3nS1eEVenMfVVlMU2RRgLJdA=="></script>
+  
+  
   
   
   
@@ -78,31 +72,31 @@
 
   
   <script type="application/ld+json">
-  {
+  [{
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "articleSection": "",
     "name": "Beltway Billions Data Visualization",
     "headline": "Beltway Billions Data Visualization",
-    "description": "The government spends billions of dollars per year on a dizzying array of gear and specialized services: office furniture, cloud computing, breakfast cereal, and advanced weapons systems are among destinations of taxpayer funds.",
+    
+    "abstract": "The government spends billions of dollars per year on a dizzying array of gear and specialized services: office furniture, cloud computing, breakfast cereal, and advanced weapons systems are among destinations of taxpayer funds.",
     "inLanguage": "en-US",
+    "url" : "\/posts\/federal_contracts\/",
     "author" : {
       "@type": "Person",
       "name": "Ben Matheson"
     },
-    "creator" : {
-      "@type": "Person",
-      "name": "Ben Matheson"
-    },
-    "copyrightHolder": "Ben Matheson",
     "copyrightYear": "2018",
     "dateCreated": "2018-07-19T22:05:17-08:00",
     "datePublished": "2018-07-19T22:05:17-08:00",
+    
     "dateModified": "2018-07-19T22:05:17-08:00",
-    "url" : "\/posts\/federal_contracts\/",
-    "wordCount": "240",
-    "keywords": []
-  }
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "240"
+  }]
   </script>
 
 
@@ -134,63 +128,81 @@
 </head>
 <body
     class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
-  ><header
-  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-800 dark:text-neutral"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 dark:bg-neutral-600 focus:translate-y-0"
+        href="#main-content"
+        ><span class="font-bold ltr:pr-2 rtl:pl-2 text-primary-600 dark:text-primary-400"
+          >&darr;</span
+        >Skip to main content</a
+      >
+    </div><header
+  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral"
 >
   
   <div>
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+        class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
         rel="me"
         href="/"
         >Ben Matheson</a
       >
+    
+
   </div>
   
   
     <nav>
       <ul class="flex flex-col list-none sm:flex-row">
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/posts/"
               title=""
               >Writing</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/projects/"
               title="Projects"
               >Projects</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/contact/"
               title="Contact"
               >Contact</a
             >
           </li>
         
+        
       </ul>
     </nav>
   
 </header>
-<main class="flex-grow">
-  <article class="max-w-prose">
-    <header>
+<main id="main-content" class="relative grow">
+  <article>
+    <header class="max-w-prose">
       
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-800 dark:text-neutral">
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
         Beltway Billions Data Visualization
       </h1>
-      <div class="mt-8 mb-12 text-base text-neutral-400 dark:text-neutral-500">
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400">
         
 
 
@@ -211,8 +223,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -220,44 +236,141 @@
     
   </div>
 
+  
+  
+
 
       </div>
     </header>
-    <section class="prose dark:prose-light">
-      <p>The government spends billions of dollars per year on a dizzying array of gear and specialized services: office furniture, cloud computing, breakfast cereal, and advanced weapons systems are among destinations of taxpayer funds. I <a href="https://benmatheson.github.io/governmentcontracts/">created a project</a>
+    <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
+      
+      <div class="min-w-0 min-h-0 max-w-prose">
+        <p>The government spends billions of dollars per year on a dizzying array of gear and specialized services: office furniture, cloud computing, breakfast cereal, and advanced weapons systems are among destinations of taxpayer funds. I <a href="https://benmatheson.github.io/governmentcontracts/">created a project</a>
 to explore how a half-trillion dollars of federal funds go to Washington D.C. contractors and competitors in 50 states.</p>
-<p><img src="images/enigma1.gif" alt="contracts"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_330x0_resize_box.gif 330w,
+          /posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_660x0_resize_box.gif 660w,
+          /posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_1024x0_resize_box.gif 1024w,
+          /posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_1320x0_resize_box.gif 2x"
+        src="/posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_660x0_resize_box.gif"
+        alt="contracts"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>This analysis, based on data published on <a href="https://public.enigma.com/">Enigma Public</a>, explores the geography of this contract spending among beltway firms and the thousands of regional and small-town competitors.</p>
 <p>After a significant amount of data cleaning (some entity resolution) and generation of summary statistics, the data were almost ready for a few key visualizations.</p>
-<p><img src="images/enigma4.gif" alt="contracts"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_330x0_resize_box.gif 330w,
+          /posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_660x0_resize_box.gif 660w,
+          /posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_1024x0_resize_box.gif 1024w,
+          /posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_1320x0_resize_box.gif 2x"
+        src="/posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_660x0_resize_box.gif"
+        alt="contracts"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>I utilized the wonderful ggmap package to geocode locations in R and developed a method for tagging contracts as “beltway” by a simple spatial join with the Washington-Arlington-Alexandria, DC-VA-MD-WV Metropolitan Statistical Area in QGIS.</p>
-<p><img src="images/enigma3.gif" alt="enigma"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_330x0_resize_box.gif 330w,
+          /posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_660x0_resize_box.gif 660w,
+          /posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_1024x0_resize_box.gif 1024w,
+          /posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_1320x0_resize_box.gif 2x"
+        src="/posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_660x0_resize_box.gif"
+        alt="enigma"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>This was my first real use of <a href="https://www.mapbox.com/help/define-mapbox-gl/.">Mapbox GL</a> I combined it with a handful of basic D3 charts and built a UI that encouraged exploration at a local level. I aggregated by congressional district as a way to normalize by a logical method, as each district has about 710,000 residents.</p>
-<p><img src="images/enigma6.gif" alt="contracts"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_330x0_resize_box.gif 330w,
+          /posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_660x0_resize_box.gif 660w,
+          /posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_1024x0_resize_box.gif 1024w,
+          /posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_1320x0_resize_box.gif 2x"
+        src="/posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_660x0_resize_box.gif"
+        alt="contracts"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>The analysis uses <a href="https://www.usaspending.gov/#/">USA Spending data</a> published on Enigma Public. It includes 2016 (the last year full data is available) federal government contracts greater than $1 million that were awarded to US-based companies and executed in the United States.</p>
 <p><a href="https://github.com/benmatheson/governmentcontracts">Code is here.</a></p>
 <p><a href="https://benmatheson.github.io/governmentcontracts/">Live version of the website.</a></p>
 
+      </div>
     </section>
-    <footer class="pt-8">
+    <footer class="pt-8 max-w-prose">
       
 
       
 
       
   
-    <div class="pt-8 article-pagination">
+    
+    
+    
+    <div class="pt-8">
       <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex" href="/posts/iditarod-zoom/">
-              <span class="mr-3 article-pagination-direction">&larr;</span>
+            <a class="flex group" href="/posts/ice_contracts/">
+              <span
+                class="mr-3 ltr:inline rtl:hidden text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 ltr:hidden rtl:inline text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
               <span class="flex flex-col">
-                <span class="article-pagination-title mt-[0.1rem] leading-6"
-                  >Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map</span
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >ICE Contracts in Every State</span
                 >
-                <span class="mt-[0.1rem] text-xs text-neutral-400 dark:text-neutral-500">
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
                 </span>
               </span>
@@ -266,16 +379,24 @@ to explore how a half-trillion dollars of federal funds go to Washington D.C. co
         </span>
         <span>
           
-            <a class="flex text-right" href="/posts/ice_contracts/">
+            <a class="flex text-right group" href="/posts/iditarod-zoom/">
               <span class="flex flex-col">
-                <span class="article-pagination-title mt-[0.1rem] leading-6"
-                  >ICE Contracts in Every State</span
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Flying 1,000 Miles on The Iditarod Trail - Data Visualization and Map</span
                 >
-                <span class="mt-[0.1rem] text-xs text-neutral-400 dark:text-neutral-500">
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
                 </span>
               </span>
-              <span class="ml-3 article-pagination-direction">&rarr;</span>
+              <span
+                class="ml-3 ltr:inline rtl:hidden text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 ltr:hidden rtl:inline text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
             </a>
           
         </span>
@@ -287,13 +408,29 @@ to explore how a half-trillion dollars of federal funds go to Washington D.C. co
     </footer>
     
   </article>
-</main><footer class="py-10">
+
+      
+        <div
+          class="absolute top-[110vh] ltr:right-0 rtl:left-0 w-12 pointer-events-none bottom-[-5.5rem]"
+        >
+          <a
+            href="#the-top"
+            class="w-12 h-12 sticky pointer-events-auto top-[calc(100vh-5rem)] bg-neutral/50 dark:bg-neutral-800/50 backdrop-blur rounded-full text-xl flex items-center justify-center text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      
+    </main>
+    <footer class="py-10">
   
   
   <div class="flex justify-between">
     <div>
       
-      <p class="text-sm text-neutral-400 dark:text-neutral-500">
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2022
           Ben Matheson

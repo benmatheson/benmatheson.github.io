@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html
   lang="en-US"
-  
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="false"
 ><head>
   <meta charset="utf-8" />
   
@@ -13,7 +16,7 @@
   <title>Gas Hackathon &middot; Ben Matheson</title>
     <meta name="title" content="Gas Hackathon &middot; Ben Matheson" />
   
-  <meta name="description" content="" />
+  
   
   
   
@@ -22,34 +25,25 @@
   
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/schemes/Ocean.min.ff17c50528c7a4a8a8bb8ec41272d63eb936ecefb9ccfa6db45cd1f5cd8b1becf8606745f751ee0d322ac80c9cb96e58aa699b38aa44cff9d2a8b3ff4f05a7b5.css"
-    integrity="sha512-/xfFBSjHpKiou47EEnLWPrk27O&#43;5zPpttFzR9c2LG&#43;z4YGdF91HuDTIqyAycuW5YqmmbOKpEz/nSqLP/TwWntQ=="
-  />
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/compiled/main.min.4076b9cf114dd23cca017f3365e2205a4c9a4b2c0ef4193ccd08883f76e554aa40f674a8f6e77a1b2895be0975ba8e019b0c59996c2eea32e4970ca4d5221653.css"
-    integrity="sha512-QHa5zxFN0jzKAX8zZeIgWkyaSywO9Bk8zQiIP3blVKpA9nSo9ud6GyiVvgl1uo4BmwxZmWwu6jLklwyk1SIWUw=="
-  />
+  
   
   
     
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="/css/custom.min.d6476224aa826a677cb9ab5a2f7b0f9f0adc403cbc11016b0b066253eb756dfadcf871a2147f54f11bf2024f627d85daf4e588f2dadf2c4c5f596e395cc5ada6.css"
-      integrity="sha512-1kdiJKqCamd8uataL3sPnwrcQDy8EQFrCwZiU&#43;t1bfrc&#43;HGiFH9U8RvyAk9ifYXa9OWI8trfLExfWW45XMWtpg=="
-    />
   
   
-    <script>
-      localStorage.removeItem("preferredAppearance");
-    </script>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.6011e7a76e6a02592fbc0fccff519c14bb90e4e8eb4510f43dea784baa71a6e9126cafb7523dca1593a33d54f0d26a1617460ee185d4b2258fa2fab51badb6a2.css"
+    integrity="sha512-YBHnp25qAlkvvA/M/1GcFLuQ5OjrRRD0Pep4S6pxpukSbK&#43;3Uj3KFZOjPVTw0moWF0YO4YXUsiWPovq1G622og=="
+  />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.dbca9e2200cf929a23b55442f2ff09361b8d5290147ff1407f89ed3839f0fea13db4e94f5ae6bf2f3de10d322b4bede74b578455e9cc7d5565314d914602c974.js" integrity="sha512-28qeIgDPkpojtVRC8v8JNhuNUpAUf/FAf4ntODnw/qE9tOlPWua/Lz3hDTIrS&#43;3nS1eEVenMfVVlMU2RRgLJdA=="></script>
+  
+  
   
   
   
@@ -78,31 +72,31 @@
 
   
   <script type="application/ld+json">
-  {
+  [{
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "articleSection": "",
     "name": "Gas Hackathon",
     "headline": "Gas Hackathon",
-    "description": "I recently took part in Launch Alaska\u0026rsquo;s Renewable Energy Reverse Hack-a-thon.",
+    
+    "abstract": "I recently took part in Launch Alaska\u0026rsquo;s Renewable Energy Reverse Hack-a-thon.",
     "inLanguage": "en-US",
+    "url" : "\/posts\/energy-hackathon\/",
     "author" : {
       "@type": "Person",
       "name": "Ben Matheson"
     },
-    "creator" : {
-      "@type": "Person",
-      "name": "Ben Matheson"
-    },
-    "copyrightHolder": "Ben Matheson",
     "copyrightYear": "2017",
     "dateCreated": "2017-09-17T22:05:17-08:00",
     "datePublished": "2017-09-17T22:05:17-08:00",
+    
     "dateModified": "2017-09-17T22:05:17-08:00",
-    "url" : "\/posts\/energy-hackathon\/",
-    "wordCount": "283",
-    "keywords": []
-  }
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "283"
+  }]
   </script>
 
 
@@ -134,63 +128,81 @@
 </head>
 <body
     class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
-  ><header
-  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-800 dark:text-neutral"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 dark:bg-neutral-600 focus:translate-y-0"
+        href="#main-content"
+        ><span class="font-bold ltr:pr-2 rtl:pl-2 text-primary-600 dark:text-primary-400"
+          >&darr;</span
+        >Skip to main content</a
+      >
+    </div><header
+  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral"
 >
   
   <div>
     
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+        class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
         rel="me"
         href="/"
         >Ben Matheson</a
       >
+    
+
   </div>
   
   
     <nav>
       <ul class="flex flex-col list-none sm:flex-row">
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/posts/"
               title=""
               >Writing</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/projects/"
               title="Projects"
               >Projects</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="/contact/"
               title="Contact"
               >Contact</a
             >
           </li>
         
+        
       </ul>
     </nav>
   
 </header>
-<main class="flex-grow">
-  <article class="max-w-prose">
-    <header>
+<main id="main-content" class="relative grow">
+  <article>
+    <header class="max-w-prose">
       
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-800 dark:text-neutral">
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
         Gas Hackathon
       </h1>
-      <div class="mt-8 mb-12 text-base text-neutral-400 dark:text-neutral-500">
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400">
         
 
 
@@ -211,8 +223,12 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
 
@@ -220,15 +236,80 @@
     
   </div>
 
+  
+  
+
 
       </div>
     </header>
-    <section class="prose dark:prose-light">
-      <p>I recently took part in <a href="https://www.eventbrite.com/e/launch-alaska-renewable-energy-reverse-hack-a-thon-tickets-36077461659">Launch Alaska&rsquo;s Renewable Energy Reverse Hack-a-thon.</a> The &ldquo;reverse&rdquo; part comes into play in that there are a handful of signifincatly-baked ideas sketched out by industry and user experts presented to each team.</p>
+    <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
+      
+      <div class="min-w-0 min-h-0 max-w-prose">
+        <p>I recently took part in <a href="https://www.eventbrite.com/e/launch-alaska-renewable-energy-reverse-hack-a-thon-tickets-36077461659">Launch Alaska&rsquo;s Renewable Energy Reverse Hack-a-thon.</a> The &ldquo;reverse&rdquo; part comes into play in that there are a handful of signifincatly-baked ideas sketched out by industry and user experts presented to each team.</p>
 <p>I worked with Nigel Kibodeaux and Jazon Burnell to create a small web app that compares your <a href="http://codeforanchorage.org/neighborhood-natural-gas-dashboard/">real-time natural gas usage with your neighbors.</a></p>
-<p><img src="images/MAIN.png" alt="main">
-<img src="images/day.png" alt="day">
-<img src="images/DB.png" alt="dashboard"></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/energy-hackathon/images/MAIN_huf2674d50dd7ab1d50d1237eede0b6056_31315_330x0_resize_box_3.png 330w,
+          /posts/energy-hackathon/images/MAIN_huf2674d50dd7ab1d50d1237eede0b6056_31315_660x0_resize_box_3.png 660w,
+          /posts/energy-hackathon/images/MAIN_huf2674d50dd7ab1d50d1237eede0b6056_31315_1024x0_resize_box_3.png 1024w,
+          /posts/energy-hackathon/images/MAIN_huf2674d50dd7ab1d50d1237eede0b6056_31315_1320x0_resize_box_3.png 2x"
+        src="/posts/energy-hackathon/images/MAIN_huf2674d50dd7ab1d50d1237eede0b6056_31315_660x0_resize_box_3.png"
+        alt="main"
+      />
+      
+    </figure>
+  
+
+
+
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/energy-hackathon/images/day_hu82078905b1749b62a0403dfcdd7861a3_26564_330x0_resize_box_3.png 330w,
+          /posts/energy-hackathon/images/day_hu82078905b1749b62a0403dfcdd7861a3_26564_660x0_resize_box_3.png 660w,
+          /posts/energy-hackathon/images/day_hu82078905b1749b62a0403dfcdd7861a3_26564_1024x0_resize_box_3.png 1024w,
+          /posts/energy-hackathon/images/day_hu82078905b1749b62a0403dfcdd7861a3_26564_1320x0_resize_box_3.png 2x"
+        src="/posts/energy-hackathon/images/day_hu82078905b1749b62a0403dfcdd7861a3_26564_660x0_resize_box_3.png"
+        alt="day"
+      />
+      
+    </figure>
+  
+
+
+
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/energy-hackathon/images/DB_hubb4bdbe0b8f953f4f5e9f70fa2ca1cb3_22544_330x0_resize_box_3.png 330w,
+          /posts/energy-hackathon/images/DB_hubb4bdbe0b8f953f4f5e9f70fa2ca1cb3_22544_660x0_resize_box_3.png 660w,
+          /posts/energy-hackathon/images/DB_hubb4bdbe0b8f953f4f5e9f70fa2ca1cb3_22544_1024x0_resize_box_3.png 1024w,
+          /posts/energy-hackathon/images/DB_hubb4bdbe0b8f953f4f5e9f70fa2ca1cb3_22544_1320x0_resize_box_3.png 2x"
+        src="/posts/energy-hackathon/images/DB_hubb4bdbe0b8f953f4f5e9f70fa2ca1cb3_22544_660x0_resize_box_3.png"
+        alt="dashboard"
+      />
+      
+    </figure>
+  
+
+</p>
 <p>Your utility isn&rsquo;t giving you the data, however. They only check once a month to see how much to bill you. Our project relies on a small sensor that picks up radio frequencies broadcased by gas meters at your home. It&rsquo;s connected to an internet-linked small Raspberry Pi, which in turn regurarly sends data to a database that allows developers to access and build off the data.</p>
 <p>We guided our work under four main themes:</p>
 <ul>
@@ -238,38 +319,70 @@
 <li><strong>little nudges (bring small behavior suggestions into the app)</strong></li>
 </ul>
 <p>We found inspiration in some fascinating voter research that asks <a href="http://isps.yale.edu/sites/default/files/publication/2012/12/ISPS08-001.pdf">how people respond with information about their neighbors</a>. To that end, we compared a user&rsquo;s real time usage to a neighborhood integration.</p>
-<p><img src="images/group.png" alt="hackaton group photo"> <em>(Photo by Brendan Babb)</em></p>
+<p>
+
+
+
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /posts/energy-hackathon/images/group_hu370cf8842d6459314e5f34e193483d82_774951_330x0_resize_box_3.png 330w,
+          /posts/energy-hackathon/images/group_hu370cf8842d6459314e5f34e193483d82_774951_660x0_resize_box_3.png 660w,
+          /posts/energy-hackathon/images/group_hu370cf8842d6459314e5f34e193483d82_774951_1024x0_resize_box_3.png 1024w,
+          /posts/energy-hackathon/images/group_hu370cf8842d6459314e5f34e193483d82_774951_1320x0_resize_box_3.png 2x"
+        src="/posts/energy-hackathon/images/group_hu370cf8842d6459314e5f34e193483d82_774951_660x0_resize_box_3.png"
+        alt="hackaton group photo"
+      />
+      
+    </figure>
+  
+
+ <em>(Photo by Brendan Babb)</em></p>
 <p>As the project was done a hackathon schedule we didn&rsquo;t refine the interface far beyond the bare essentials. The integration of the handful of existing users with the <a href="https://bmon-documentation.readthedocs.io/en/latest/">AHFC&rsquo;s Bulding Monitoring BMON API</a> made accessing live data possible.</p>
 <p>Additional sponsors and collaborators in the event included:</p>
 <p>Alaska Native Science and Engineering Program (ANSEP), the Alaska Center for Energy and Power (ACEP), National Renewable Energy Lab (NREL), the Cold Climate Housing Research Center (CCHRC), and Code for Anchorage.</p>
 
+      </div>
     </section>
-    <footer class="pt-8">
+    <footer class="pt-8 max-w-prose">
       
 
       
 
       
   
-    <div class="pt-8 article-pagination">
+    
+    
+    
+    <div class="pt-8">
       <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex" href="/posts/ice_contracts/">
-              <span class="mr-3 article-pagination-direction">&larr;</span>
+        </span>
+        <span>
+          
+            <a class="flex text-right group" href="/posts/ice_contracts/">
               <span class="flex flex-col">
-                <span class="article-pagination-title mt-[0.1rem] leading-6"
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >ICE Contracts in Every State</span
                 >
-                <span class="mt-[0.1rem] text-xs text-neutral-400 dark:text-neutral-500">
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
                 </span>
               </span>
+              <span
+                class="ml-3 ltr:inline rtl:hidden text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 ltr:hidden rtl:inline text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
             </a>
-          
-        </span>
-        <span>
           
         </span>
       </div>
@@ -280,13 +393,29 @@
     </footer>
     
   </article>
-</main><footer class="py-10">
+
+      
+        <div
+          class="absolute top-[110vh] ltr:right-0 rtl:left-0 w-12 pointer-events-none bottom-[-5.5rem]"
+        >
+          <a
+            href="#the-top"
+            class="w-12 h-12 sticky pointer-events-auto top-[calc(100vh-5rem)] bg-neutral/50 dark:bg-neutral-800/50 backdrop-blur rounded-full text-xl flex items-center justify-center text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      
+    </main>
+    <footer class="py-10">
   
   
   <div class="flex justify-between">
     <div>
       
-      <p class="text-sm text-neutral-400 dark:text-neutral-500">
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2022
           Ben Matheson
