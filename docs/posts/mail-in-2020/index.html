@@ -247,27 +247,7 @@
       <div class="min-w-0 min-h-0 max-w-prose">
         <p>**<em>TL:DR, I made an rmarkdown site <a href="https://benmatheson.github.io/alaska_2020_early_absentee_vote/early_vote_md.html">tracking Alaska&rsquo;s early and mail vote</a> as ballots arrived each day in October/November 2020.</em></p>
 <p>Alaskans voted by mail in record numbers during the 2020/pandemic general election. In mid-October after I mailed in my ballot, I started poking around the Alaska Division of Elections website to see if they had any reports on the incoming ballots. I found a <a href="https://www.elections.alaska.gov/results/20GENR/data/sovc/CombinedBallotCountReport_Server.pdf">daily updated PDF</a> of mail votes, early votes, rejected ballots, and the ballots outstanding.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/mail-in-2020/images/early_vote/pdf1_hubd5b47ddc0b68a9e2461ae6a24062112_42447_330x0_resize_box_3.png 330w,
-          /posts/mail-in-2020/images/early_vote/pdf1_hubd5b47ddc0b68a9e2461ae6a24062112_42447_660x0_resize_box_3.png 660w,
-          /posts/mail-in-2020/images/early_vote/pdf1_hubd5b47ddc0b68a9e2461ae6a24062112_42447_1024x0_resize_box_3.png 1024w,
-          /posts/mail-in-2020/images/early_vote/pdf1_hubd5b47ddc0b68a9e2461ae6a24062112_42447_1320x0_resize_box_3.png 2x"
-        src="/posts/mail-in-2020/images/early_vote/pdf1_hubd5b47ddc0b68a9e2461ae6a24062112_42447_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/early_vote/pdf1.png" alt="plot1" title="" /></p>
 <p>Though it&rsquo;s in a PDF, this was the data I was looking for. While the Division of Elections emails out a full updated voter file quite frequently that&rsquo;s very granular and tracks things like party registration, I wanted to use a dataset that was machine-readable on the web. And the resolution down to actual voters was a little too much for what I wanted to track, which was:</p>
 <p><em>What areas of the state are  most enthusiastically particpating in vote-by-mail? Which are not taking part? What areas are seeing the most rejected ballots?</em></p>
 <p>This Alaska House District-level data is locked in the PDF above, but it seemed organized and consistent. I wanted to see if I could break this data out of the PDF and show it how I wanted to see it. Like all of my side projects, it&rsquo;s made for an audeince of one: me. If anyone else enjoys it, that&rsquo;s a bonus.</p>
@@ -279,164 +259,24 @@ url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https:
 tabula<span style="color:#f92672">.</span>convert_into(url, <span style="color:#e6db74">&#34;output_current.csv&#34;</span>, output_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;csv&#34;</span>, pages<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;all&#39;</span>)
 
 </code></pre></div><p>With some projects, the hard parts are easy and the easy parts are hard. This is one of those projects. After running the PDF through tabula-py, I got something that looked like this:</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/mail-in-2020/images/early_vote/csv1_hu7b345327a5a3e3f39a2cac4d93488809_43962_330x0_resize_box_3.png 330w,
-          /posts/mail-in-2020/images/early_vote/csv1_hu7b345327a5a3e3f39a2cac4d93488809_43962_660x0_resize_box_3.png 660w,
-          /posts/mail-in-2020/images/early_vote/csv1_hu7b345327a5a3e3f39a2cac4d93488809_43962_1024x0_resize_box_3.png 1024w,
-          /posts/mail-in-2020/images/early_vote/csv1_hu7b345327a5a3e3f39a2cac4d93488809_43962_1320x0_resize_box_3.png 2x"
-        src="/posts/mail-in-2020/images/early_vote/csv1_hu7b345327a5a3e3f39a2cac4d93488809_43962_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/early_vote/csv1.png" alt="plot1" title="" /></p>
 <p>Much better. That one line of python is fantastic. After a bunch of reshaping and adding in new fields like percentages in R with dyplyr, I had the base data for the rmarkdown report.  It was not a pretty system but it worked for the three or four weeks that this was running.</p>
 <p>I had been using <a href="https://rmarkdown.rstudio.com/">Rmarkdown</a> to run a handful of reports with COVID-19 information at work, and this seemed like a really nice fit for rmarkdown reports. Load in new data each day, run it, and push to the web.</p>
 <p>This is the <a href="https://benmatheson.github.io/alaska_2020_early_absentee_vote/early_vote_md.html">final product</a>.</p>
 <p>The ggplot thoroughout was pretty basic, though getting the details right is the time-consuming part. I wanted to show all 40 districts at once, so it&rsquo;s a bit dense, but this is what I wanted.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/mail-in-2020/images/early_vote/hd_2016_status_hu0aed6663ede3d5df85a1ec1e5ebf1cab_151288_330x0_resize_box_3.png 330w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_status_hu0aed6663ede3d5df85a1ec1e5ebf1cab_151288_660x0_resize_box_3.png 660w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_status_hu0aed6663ede3d5df85a1ec1e5ebf1cab_151288_1024x0_resize_box_3.png 1024w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_status_hu0aed6663ede3d5df85a1ec1e5ebf1cab_151288_1320x0_resize_box_3.png 2x"
-        src="/posts/mail-in-2020/images/early_vote/hd_2016_status_hu0aed6663ede3d5df85a1ec1e5ebf1cab_151288_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/early_vote/hd_2016_status.png" alt="plot1" title="" /></p>
 <p>Alaska&rsquo;s 40 House districts cover all the diversity of the state..from the ferry-connected towns in Southeast to the exurban Mat-Su and all the  I wanted to add one level of geographic categorization. It&rsquo;s not intuitive to know that HD33 represents downtown Juneau while HD32 covers Kodiak. So I made up six regional designations, show in the colors of the bars below. These are made up out of thin air.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/mail-in-2020/images/early_vote/hd_2016_turnout_hu51e1c38d77a436e7f6465967651ea95a_136839_330x0_resize_box_3.png 330w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_turnout_hu51e1c38d77a436e7f6465967651ea95a_136839_660x0_resize_box_3.png 660w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_turnout_hu51e1c38d77a436e7f6465967651ea95a_136839_1024x0_resize_box_3.png 1024w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_turnout_hu51e1c38d77a436e7f6465967651ea95a_136839_1320x0_resize_box_3.png 2x"
-        src="/posts/mail-in-2020/images/early_vote/hd_2016_turnout_hu51e1c38d77a436e7f6465967651ea95a_136839_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/early_vote/hd_2016_turnout.png" alt="plot1" title="" /></p>
 <p>I wanted to show how different the voting landscape was across the state. Vote by mail was far less utilized in rural parts of the state in the west and north compared to urban Anchorage districts. Less than 10% of the 2016-level turnout voted by mail in the west and north, while you see in that mass of light blue bars that nine Anchorage districts were at ~40%.</p>
 <p>I was at a couple points really close to making a map to show the regional trends, but I decided against it. The world has enough election maps.</p>
 <p>The in-person early vote also saw a huge particpation this year. But it was the Juneau Mendenhall Valley (the &ldquo;conservative&rdquo; part of Juneau - shown in green) as well as the Mat-Su districts (shown in red-purple) that really outperfomred with early in-person.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/mail-in-2020/images/early_vote/hd_participation_hu80051d78a6621caaa0bda10fc2df3673_102033_330x0_resize_box_3.png 330w,
-          /posts/mail-in-2020/images/early_vote/hd_participation_hu80051d78a6621caaa0bda10fc2df3673_102033_660x0_resize_box_3.png 660w,
-          /posts/mail-in-2020/images/early_vote/hd_participation_hu80051d78a6621caaa0bda10fc2df3673_102033_1024x0_resize_box_3.png 1024w,
-          /posts/mail-in-2020/images/early_vote/hd_participation_hu80051d78a6621caaa0bda10fc2df3673_102033_1320x0_resize_box_3.png 2x"
-        src="/posts/mail-in-2020/images/early_vote/hd_participation_hu80051d78a6621caaa0bda10fc2df3673_102033_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/early_vote/hd_participation.png" alt="plot1" title="" /></p>
 <p>I brought in some historical data to make the raw numbers a bit more meaningful. I grabbed 2016 vote turnout numbers as well as the Trump-Clinton margin for a partisan measurement. Would redder parts of Alaska follow the national trend and skip the mail voting? (the answer: yes, but with the big exception of HD-38,HD-39, and HD-40 the bush districts).</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/mail-in-2020/images/early_vote/hd_2016_partisan_hu05d8545b8767937e4235c584438dd01d_55927_330x0_resize_box_3.png 330w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_partisan_hu05d8545b8767937e4235c584438dd01d_55927_660x0_resize_box_3.png 660w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_partisan_hu05d8545b8767937e4235c584438dd01d_55927_1024x0_resize_box_3.png 1024w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_partisan_hu05d8545b8767937e4235c584438dd01d_55927_1320x0_resize_box_3.png 2x"
-        src="/posts/mail-in-2020/images/early_vote/hd_2016_partisan_hu05d8545b8767937e4235c584438dd01d_55927_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/early_vote/hd_2016_partisan.png" alt="plot1" title="" /></p>
 <p>The couple of scatter plots comparing voter registration and vote-by-mail aren&rsquo;t exactly thrilling, but it was useful for day-to-day on-the-fly exploratory data analysis. You can see the same regional trends pop out, though labelling is hard. I wanted to include all 40 labels. If I was doing something for a real presentation, I&rsquo;d be a lot more selective on what&rsquo;s labelled and how.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/mail-in-2020/images/early_vote/hd_2016_reg_voters_hud6a774b511e7d7870f5d7a7f63c0ca09_57263_330x0_resize_box_3.png 330w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_reg_voters_hud6a774b511e7d7870f5d7a7f63c0ca09_57263_660x0_resize_box_3.png 660w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_reg_voters_hud6a774b511e7d7870f5d7a7f63c0ca09_57263_1024x0_resize_box_3.png 1024w,
-          /posts/mail-in-2020/images/early_vote/hd_2016_reg_voters_hud6a774b511e7d7870f5d7a7f63c0ca09_57263_1320x0_resize_box_3.png 2x"
-        src="/posts/mail-in-2020/images/early_vote/hd_2016_reg_voters_hud6a774b511e7d7870f5d7a7f63c0ca09_57263_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/early_vote/hd_2016_reg_voters.png" alt="plot1" title="" /></p>
 <p>I had a lot of fun making a table using the gt pacakge. I&rsquo;d like to do a lot more with it.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/mail-in-2020/images/early_vote/table_hud402609cbd3d41acf56ddbca55fe9084_68414_330x0_resize_box_3.png 330w,
-          /posts/mail-in-2020/images/early_vote/table_hud402609cbd3d41acf56ddbca55fe9084_68414_660x0_resize_box_3.png 660w,
-          /posts/mail-in-2020/images/early_vote/table_hud402609cbd3d41acf56ddbca55fe9084_68414_1024x0_resize_box_3.png 1024w,
-          /posts/mail-in-2020/images/early_vote/table_hud402609cbd3d41acf56ddbca55fe9084_68414_1320x0_resize_box_3.png 2x"
-        src="/posts/mail-in-2020/images/early_vote/table_hud402609cbd3d41acf56ddbca55fe9084_68414_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/early_vote/table.png" alt="plot1" title="" /></p>
 <p>This looked something like this:</p>
 <pre tabindex="0"><code>gt(votes_mail_early %&gt;% select (district_number, district_description, ballots_received, ballots_sent, reject, accept_full) %&gt;% arrange(desc(ballots_received))) %&gt;% 
  data_color(

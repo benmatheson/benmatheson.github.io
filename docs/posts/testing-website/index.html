@@ -250,27 +250,7 @@
 <p>While it was very tempting to build a map as the main interface (and the state of Alaska <a href="https://alaska-dhss.maps.arcgis.com/apps/webappviewer/index.html?id=2d92b77bc8044329a1ee3954b063bd8c">did</a>) we held back and tried to focus on a much more focused question:</p>
 <p><em><strong>“Where can I get a free COVID-19 test today (or tomorrow~ish)?</strong></em></p>
 <p>Here&rsquo;s what we had in December:</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_330x0_resize_box_3.png 330w,
-          /posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_660x0_resize_box_3.png 660w,
-          /posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_1024x0_resize_box_3.png 1024w,
-          /posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_1320x0_resize_box_3.png 2x"
-        src="/posts/testing-website/images/covid/covid_screen_hu8ca5249b35023b21f92aed604f1a9fd5_45869_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-
+<p><img src="images/covid/covid_screen.png" alt="plot1" title="" />
 This was to be a lightning fast, somewhat barebones site that tells you: here&rsquo;s a few spots you can go. Not which one is closest to you. We thought of that as a seperate probelem, so for locations, we simply linked to the Google Maps listing for each location. We&rsquo;re not going to build a better map or routing engine than Google, so this helps people use a tool that they already do. Making people navigate a complex ESRI map is unecessary and in my opinion adds more complexity than it does orient people to resources.</p>
 <p>This task is more about reducing complexity and <a href="https://www.bi.team/publications/making-the-change-behavioural-factors-in-person-and-community-centred-approaches-for-health-and-wellbeing/">friction costs</a> that surround a not-fun task. The cognitive load of coronavirus is already large before someone gets a test.</p>
 <ul>
@@ -283,186 +263,26 @@ This was to be a lightning fast, somewhat barebones site that tells you: here&rs
 <p>COVID-19 testing should have as little friction as possible.</p>
 <p>The size of the menu was about right: there are between one and six sites open each day. We&rsquo;re not dealing with <a href="https://www.nychealthandhospitals.org/covid-19-testing-sites/">several dozen</a> like New York.</p>
 <p>The primary axis of the site is time, rather than location. The only real UI interactive elements are big buttons for <strong>Previous Day</strong> and <strong>Next Day</strong>.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_330x0_resize_box.gif 330w,
-          /posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_660x0_resize_box.gif 660w,
-          /posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_1024x0_resize_box.gif 1024w,
-          /posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_1320x0_resize_box.gif 2x"
-        src="/posts/testing-website/images/covid/covid_days_hu2d851eea02f202680ae77f665b595640_1771975_660x0_resize_box.gif"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/covid/covid_days.gif" alt="plot1" title="" /></p>
 <p>We didn&rsquo;t build out a full calendar or get into appointments or anything like that. And while there are a lot more options to get a COVID-19 test, such as many primary care clinics and rapid antigen testing, the city-funded sites help simplify the selection process for residents. They&rsquo;re free, open to all, and allow drive-through or walk-up access.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_330x0_resize_q75_box.jpg 330w,
-          /posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_660x0_resize_q75_box.jpg 660w,
-          /posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_1024x0_resize_q75_box.jpg 1024w,
-          /posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_1320x0_resize_q75_box.jpg 2x"
-        src="/posts/testing-website/images/covid/covid_rv_hufbc3dc71afd6ce33247fee0c61458583_884290_660x0_resize_q75_box.jpg"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/covid/covid_rv.jpg" alt="plot1" title="" /></p>
 <p><em>This is what the Fairview testing site looked like in November. It&rsquo;s basically an RV that you drive or walk up to.</em></p>
 <p>One other choice we/I made is to demphasize the pre-registration process. The test vendors' online registration process is unweildly and not entirely necessary. So we tell people that, in fewer words.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_330x0_resize_box_3.PNG 330w,
-          /posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_660x0_resize_box_3.PNG 660w,
-          /posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_1024x0_resize_box_3.PNG 1024w,
-          /posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_1320x0_resize_box_3.PNG 2x"
-        src="/posts/testing-website/images/covid/register_hua6b6ffdb8a80f16324ea04be2cfaae6e_18773_660x0_resize_box_3.PNG"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/covid/register.PNG" alt="plot1" title="" /></p>
 <h2 id="google-sheets-as-a-cms" class="relative group">Google Sheets as a CMS <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#google-sheets-as-a-cms" aria-label="Anchor">#</a></span></h2>
 <p>The initial version of this site during the end summer of 2020 was mostly vanilla javascript. It was a very very soft launch. Because testing sites ran on a consistent weekly schedule, I hardcoded that into the site to show the right test sites on the right days. But as the pandemic grew and the testing regime added in new complexity, such as pop-up testing sites at schoosl and shopping areas, the site needed a more nimble way to keep it up to date. And preferrably by not me.</p>
 <p>I made a Google sheet that allowed for a shifting schedule of recurring and pop-up testing sites. The Google Sheets API will output a JSON file that you can hit. The site reads the JSON.  It’s easy to update and amazingly has not broken.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_330x0_resize_box_3.png 330w,
-          /posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_660x0_resize_box_3.png 660w,
-          /posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_1024x0_resize_box_3.png 1024w,
-          /posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_1320x0_resize_box_3.png 2x"
-        src="/posts/testing-website/images/covid/covid_sheet_hu0ff4bd31f4f730e3299bc6cb79fe0078_159004_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/covid/covid_sheet.png" alt="plot1" title="" /></p>
 <p>What I wanted to do is make html out of some data that is subject to change. This seems like a good use case for React. And the React is pretty dead simple. I have a &ldquo;location&rdquo; component that reads the data from the sheet and builds a little div with the information about the testing site. It&rsquo;s great to have new html elements render on the fly based on the ever-changing schedule.</p>
 <h2 id="busyness-indicators" class="relative group">Busyness Indicators <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#busyness-indicators" aria-label="Anchor">#</a></span></h2>
 <p>We received a lot of requests for the expected wait times for each site. While we have not been able to get a regular update from the testing sites (they are busy collecting samples), we have one current dataset that would make something possible. I drew direct inspriation from the Google Maps &ldquo;Popular Times&rdquo; feature.
-
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_330x0_resize_box_3.png 330w,
-          /posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_660x0_resize_box_3.png 660w,
-          /posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_1024x0_resize_box_3.png 1024w,
-          /posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_1320x0_resize_box_3.png 2x"
-        src="/posts/testing-website/images/covid/busy_hu5f8818ce750f0ae0cf969b3f8e175edb_11797_660x0_resize_box_3.png"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<img src="images/covid/busy.png" alt="plot1" title="" /></p>
 <p>We don&rsquo;t have cell phone data like Google does, (thank god) but we do have a proxy that would work. I have a seperate ongoing project tracking the test turnaround times (the goal of the Emergency Operation Centers is to have tests results back in less than 72 hours). The dataset that powers that analysis has granular collection data, down to the minute. With this, I was able to summarize the number of tests collected per hour at each site over the most recent several days.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_330x0_resize_box_3.PNG 330w,
-          /posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_660x0_resize_box_3.PNG 660w,
-          /posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_1024x0_resize_box_3.PNG 1024w,
-          /posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_1320x0_resize_box_3.PNG 2x"
-        src="/posts/testing-website/images/covid/per_hour_hu48ffc8ed5b66a20bfd2c56d8a1f26df8_5375_660x0_resize_box_3.PNG"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/covid/per_hour.PNG" alt="plot1" title="" /></p>
 <p>The green bar highlights the current hour of the day, based on whatever the system time is. The barchart definitely does not <em><strong>need</strong></em> to be animated, but it <em><strong>is</strong></em> animated. In action here:</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_330x0_resize_box.gif 330w,
-          /posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_660x0_resize_box.gif 660w,
-          /posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_1024x0_resize_box.gif 1024w,
-          /posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_1320x0_resize_box.gif 2x"
-        src="/posts/testing-website/images/covid/covid_busy_hu684de27eb2b7a59a3de9a9d8d1d6eeaf_1203874_660x0_resize_box.gif"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/covid/covid_busy.gif" alt="plot1" title="" /></p>
 <p>The site definitely is minimalist, but it’s made for speed and one purpose - figure out when and where to get a free COVID-19 test. We’ve tried to maximize the speed and tested constantly throughout the updates.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_330x0_resize_box_3.PNG 330w,
-          /posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_660x0_resize_box_3.PNG 660w,
-          /posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_1024x0_resize_box_3.PNG 1024w,
-          /posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_1320x0_resize_box_3.PNG 2x"
-        src="/posts/testing-website/images/covid/desktop_score_hub5c8abe396c20a9c2f652b4ad3f79bda_14154_660x0_resize_box_3.PNG"
-        alt="plot1"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/covid/desktop_score.PNG" alt="plot1" title="" /></p>
 <p>Mobile and tablet traffic is consistently about 2/3rds of the traffic, and the page is designed to make the most of a mobile phone screen and be lightweight. Desktop is much less optimized, but it works the same.</p>
 <p>Many <a href="https://coronavirus-response-alaska-dhss.hub.arcgis.com/">official websites</a>, while rich with data, are poorly designed for mobile devices and are a bit heavy. While there are still several spots to trim, this loads fast for phones and those with a marginal connection.</p>
 

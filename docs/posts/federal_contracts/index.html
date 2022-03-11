@@ -247,94 +247,14 @@
       <div class="min-w-0 min-h-0 max-w-prose">
         <p>The government spends billions of dollars per year on a dizzying array of gear and specialized services: office furniture, cloud computing, breakfast cereal, and advanced weapons systems are among destinations of taxpayer funds. I <a href="https://benmatheson.github.io/governmentcontracts/">created a project</a>
 to explore how a half-trillion dollars of federal funds go to Washington D.C. contractors and competitors in 50 states.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_330x0_resize_box.gif 330w,
-          /posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_660x0_resize_box.gif 660w,
-          /posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_1024x0_resize_box.gif 1024w,
-          /posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_1320x0_resize_box.gif 2x"
-        src="/posts/federal_contracts/images/enigma1_hu784fbdb3f8b2245e87e74de8f40f2681_1765668_660x0_resize_box.gif"
-        alt="contracts"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/enigma1.gif" alt="contracts" title="" /></p>
 <p>This analysis, based on data published on <a href="https://public.enigma.com/">Enigma Public</a>, explores the geography of this contract spending among beltway firms and the thousands of regional and small-town competitors.</p>
 <p>After a significant amount of data cleaning (some entity resolution) and generation of summary statistics, the data were almost ready for a few key visualizations.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_330x0_resize_box.gif 330w,
-          /posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_660x0_resize_box.gif 660w,
-          /posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_1024x0_resize_box.gif 1024w,
-          /posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_1320x0_resize_box.gif 2x"
-        src="/posts/federal_contracts/images/enigma4_huf87e68a2927a60b0e1686828ba635c1f_594248_660x0_resize_box.gif"
-        alt="contracts"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/enigma4.gif" alt="contracts" title="" /></p>
 <p>I utilized the wonderful ggmap package to geocode locations in R and developed a method for tagging contracts as “beltway” by a simple spatial join with the Washington-Arlington-Alexandria, DC-VA-MD-WV Metropolitan Statistical Area in QGIS.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_330x0_resize_box.gif 330w,
-          /posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_660x0_resize_box.gif 660w,
-          /posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_1024x0_resize_box.gif 1024w,
-          /posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_1320x0_resize_box.gif 2x"
-        src="/posts/federal_contracts/images/enigma3_hue038fc3efde7a17629eb90582e34125a_1049581_660x0_resize_box.gif"
-        alt="enigma"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/enigma3.gif" alt="enigma" title="" /></p>
 <p>This was my first real use of <a href="https://www.mapbox.com/help/define-mapbox-gl/.">Mapbox GL</a> I combined it with a handful of basic D3 charts and built a UI that encouraged exploration at a local level. I aggregated by congressional district as a way to normalize by a logical method, as each district has about 710,000 residents.</p>
-<p>
-
-
-
-  
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        srcset="
-          /posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_330x0_resize_box.gif 330w,
-          /posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_660x0_resize_box.gif 660w,
-          /posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_1024x0_resize_box.gif 1024w,
-          /posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_1320x0_resize_box.gif 2x"
-        src="/posts/federal_contracts/images/enigma6_hua8c7734da81042172e6b3109adc1d58e_205101_660x0_resize_box.gif"
-        alt="contracts"
-      />
-      
-    </figure>
-  
-
-</p>
+<p><img src="images/enigma6.gif" alt="contracts" title="" /></p>
 <p>The analysis uses <a href="https://www.usaspending.gov/#/">USA Spending data</a> published on Enigma Public. It includes 2016 (the last year full data is available) federal government contracts greater than $1 million that were awarded to US-based companies and executed in the United States.</p>
 <p><a href="https://github.com/benmatheson/governmentcontracts">Code is here.</a></p>
 <p><a href="https://benmatheson.github.io/governmentcontracts/">Live version of the website.</a></p>
